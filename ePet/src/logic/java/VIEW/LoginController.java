@@ -46,12 +46,11 @@ public class LoginController {
 
         credentials.verifyFields(unField.getText(), pwField.getText());
         CONTROLLER.LoginController.getInstance().Login(credentials);
-        } catch (FailedLoginException e) {
-            wrongAccess.setText(e.getMessage());
+
         }catch (InvalidFieldException i){
             wrongAccess.setText(String.valueOf(i.getMessage()));
         }catch (SQLException s){
-            s.printStackTrace();
+
             wrongAccess.setText(String.valueOf(s.getMessage()));
         }
 

@@ -98,14 +98,13 @@ public class RegisterController {
                 m.changeScene("fxml2/HomepageMobile.fxml");
             }catch(SQLException s){
                 errorMsg.setText(s.getMessage());
-            } catch (FailedLoginException e) {
-                throw new RuntimeException(e);
+
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }catch(InvalidFieldException i){
             errorMsg.setText(i.getMessage());
-        } catch (FailedLoginException e) {
+        } catch (SQLException e) {
             errorMsg.setText("login failed");
 
         }catch(NullPointerException n){

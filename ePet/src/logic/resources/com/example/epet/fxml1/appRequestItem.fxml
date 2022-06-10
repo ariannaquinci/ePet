@@ -11,23 +11,23 @@
       <Button layoutX="168.0" layoutY="324.0" mnemonicParsing="false" onAction="#acceptAppRequest" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="Accept" />
       <TextArea fx:id="Place" layoutX="110.0" layoutY="63.0" prefHeight="26.0" prefWidth="277.0" style="-fx-background-color: #000000;">
          <font>
-            <Font name="Gidugu" size="20.0" />
+            <Font name="System" size="20.0" />
          </font>
       </TextArea>
       <Button layoutX="266.0" layoutY="324.0" mnemonicParsing="false" onAction="#denyAppRequest" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="Deny" />
       <TextArea fx:id="Date" layoutX="110.0" layoutY="151.0" prefHeight="69.0" prefWidth="277.0" style="-fx-background-color: #000000;">
          <font>
-            <Font name="Gidugu" size="20.0" />
+            <Font name="System" size="20.0" />
          </font>
       </TextArea>
       <TextArea fx:id="account" layoutX="110.0" layoutY="245.0" prefHeight="69.0" prefWidth="277.0" style="-fx-background-color: #000000;">
          <font>
-            <Font name="Gidugu" size="20.0" />
+            <Font name="System" size="20.0" />
          </font>
       </TextArea>
       <Label fx:id="post" layoutX="14.0" layoutY="14.0" textFill="WHITE">
          <font>
-            <Font name="Gidugu" size="20.0" />
+            <Font name="System" size="20.0" />
          </font>
       </Label>
    </children>

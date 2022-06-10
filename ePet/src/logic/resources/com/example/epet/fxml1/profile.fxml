@@ -12,39 +12,39 @@
          <children>
             <TextField fx:id="FirstName" alignment="CENTER" editable="false" promptText="First Name">
                <font>
-                  <Font name="Gidugu" size="18.0" />
+                  <Font name="System" size="18.0" />
                </font></TextField>
             <TextField fx:id="SecondName" alignment="CENTER" editable="false" promptText="Last name">
                <font>
-                  <Font name="Gidugu" size="18.0" />
+                  <Font name="System" size="18.0" />
                </font></TextField>
             <TextField fx:id="Birthday" alignment="CENTER" editable="false" promptText="Birthday">
                <font>
-                  <Font name="Gidugu" size="18.0" />
+                  <Font name="System" size="18.0" />
                </font></TextField>
             <TextField fx:id="nickname" alignment="CENTER" editable="false" promptText="Nickname">
                <font>
-                  <Font name="Gidugu" size="18.0" />
+                  <Font name="System" size="18.0" />
                </font></TextField>
             <TextField fx:id="phone_number" alignment="CENTER" editable="false" prefWidth="419.0" promptText="Phone number">
                <font>
-                  <Font name="Gidugu" size="18.0" />
+                  <Font name="System" size="18.0" />
                </font></TextField>
          </children>
       </VBox>
       <Button layoutX="155.0" layoutY="14.0" mnemonicParsing="false" onAction="#showProfileInfo" prefHeight="53.0" prefWidth="233.0" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="Show your informations">
          <font>
-            <Font name="Gidugu" size="22.0" />
+            <Font name="Comic Sans MS" size="18.0" />
          </font>
       </Button>
       <Button layoutX="323.0" layoutY="297.0" mnemonicParsing="false" onAction="#deleteProfile" prefHeight="29.0" prefWidth="121.0" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="Delete profile">
          <font>
-            <Font name="Gidugu" size="20.0" />
+            <Font name="Comic Sans MS" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="99.0" layoutY="297.0" mnemonicParsing="false" onAction="#exit" prefHeight="50.0" prefWidth="121.0" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="Log out">
+      <Button layoutX="99.0" layoutY="297.0" mnemonicParsing="false" onAction="#exit" prefHeight="35.0" prefWidth="121.0" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="Log out">
          <font>
-            <Font name="Gidugu" size="20.0" />
+            <Font name="Comic Sans MS" size="15.0" />
          </font>
       </Button>
    </children>

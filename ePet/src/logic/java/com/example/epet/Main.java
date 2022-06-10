@@ -41,7 +41,7 @@ public class Main extends Application {
         setPrevious(stg);
         setStage(stage);
         stage.showAndWait();
-
+//sistemare quando chiudo finestra popup
 
     }
     public void changeScene(String fxml) throws IOException{

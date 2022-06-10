@@ -25,7 +25,7 @@ public class LoginController {
         return instance;
     }
 
-    public void Login(UserBean bean) throws FailedLoginException, SQLException {
+    public void Login(UserBean bean) throws SQLException {
 
             Entity factoryUsr = Factory.getInstance().getObject(Types.USER);
             User user = (User)factoryUsr.createObject();
@@ -39,8 +39,8 @@ public class LoginController {
                 SessionFacade.getSession().setID(user.getEmail());
 
 
-            }catch (FailedLoginException fe) {
-                throw new FailedLoginException("Login failed, check your credentials or Sign Up.");
+            }catch (SQLException s) {
+                throw new SQLException("Login failed, check your credentials or Sign Up.");
             }
 
     }

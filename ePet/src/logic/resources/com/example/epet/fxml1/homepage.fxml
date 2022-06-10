@@ -21,7 +21,7 @@
       </ImageView>
       <Text fill="#f4f1f1" layoutX="494.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What do you want to do?" AnchorPane.leftAnchor="494.0" AnchorPane.rightAnchor="462.8683166503906" AnchorPane.topAnchor="114.39146041870117">
          <font>
-            <Font name="Gidugu" size="55.0" />
+            <Font name="Comic Sans MS" size="50.0" />
          </font>
       </Text>
       <Button layoutX="591.0" layoutY="218.0" mnemonicParsing="false" onAction="#adoptAPet" prefHeight="63.0" prefWidth="282.0" style="-fx-border-color: #000000; -fx-background-color: #8878B5;" text="Adopt a pet" textFill="#f2c0e6">

@@ -25,7 +25,7 @@
       </ImageView>
       <Text fill="#f4f1f1" layoutX="522.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here are your appointments:" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="521.0382385253906" AnchorPane.topAnchor="70.39146041870117">
          <font>
-            <Font name="Gidugu" size="55.0" />
+            <Font name="Comic Sans MS" size="50.0" />
          </font>
       </Text>
       <Button layoutX="1273.0" layoutY="12.0" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="42.0" style="-fx-background-color: #8878B5;" AnchorPane.bottomAnchor="723.0" AnchorPane.leftAnchor="1310.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="33.0">
@@ -46,12 +46,12 @@
             </ScrollPane>
             <Button layoutX="7.0" layoutY="12.0" mnemonicParsing="false" onAction="#showScheduledApps" prefHeight="51.0" prefWidth="234.0" style="-fx-background-color: #f2c0e6;" text="Show your appointments">
                <font>
-                  <Font name="Gidugu" size="22.0" />
+                  <Font name="Comic Sans MS" size="18.0" />
                </font>
             </Button>
             <Label fx:id="noResults" layoutY="72.0" prefHeight="16.0" prefWidth="898.0" textFill="#da1717">
                <font>
-                  <Font name="Gidugu" size="25.0" />
+                  <Font name="System" size="25.0" />
                </font>
             </Label>
          </children>

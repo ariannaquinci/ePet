@@ -62,12 +62,12 @@ public class RegisterController {
                  LoginController.getInstance().Login(credentials);
                  Main H= new Main();
                   H.changeScene("fxml1/register2.fxml");
-            }catch(FailedLoginException f){
-                        f.getMessage();
+            }catch(SQLException s){
+                      ErrorMsg.setText(s.getMessage());
             }
-        } catch (FailedLoginException e) {
-            ErrorMsg.setText(String.valueOf(e.getMessage()));
-            throw new RuntimeException(e);
+        } catch (SQLException e) {
+            ErrorMsg.setText(e.getMessage());
+
         }
 
 

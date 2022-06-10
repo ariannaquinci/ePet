@@ -44,13 +44,13 @@
             </Text>
             <Button id="nextButton" layoutX="303.0" layoutY="422.0" mnemonicParsing="false" onAction="#createProfile" prefHeight="52.0" prefWidth="126.0" style="-fx-background-color: #8878B5; -fx-border-color: #000000;" text="Confirm" textFill="#f2c0e6">
                <font>
-                  <Font name="System Bold" size="20.0" />
+                  <Font name="Comic Sans MS Bold" size="18.0" />
                </font>
             </Button>
             <DatePicker fx:id="BD" blendMode="DARKEN" cache="true" layoutX="86.0" layoutY="330.0" prefHeight="38.0" prefWidth="237.0" promptText="mm/dd/yyyy" style="-fx-border-color: #000000;" />
             <Label fx:id="ErrorMsg" contentDisplay="CENTER" layoutX="252.0" layoutY="381.0" prefHeight="18.0" prefWidth="229.0" textFill="#d31717">
                <font>
-                  <Font name="Gidugu" size="20.0" />
+                  <Font name="System" size="20.0" />
                </font></Label>
             <TextField fx:id="nickname" layoutX="412.0" layoutY="142.0" prefHeight="38.0" prefWidth="237.0" style="-fx-background-color: #8878B5;" />
             <TextField fx:id="phone" layoutX="412.0" layoutY="244.0" prefHeight="38.0" prefWidth="237.0" style="-fx-background-color: #8878B5;" />
@@ -69,7 +69,7 @@
       </Pane>
       <Text fill="WHITE" layoutX="619.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" textAlignment="CENTER" AnchorPane.bottomAnchor="591.0" AnchorPane.leftAnchor="618.0" AnchorPane.rightAnchor="618.0" AnchorPane.topAnchor="151.0">
          <font>
-            <Font name="Gidugu" size="55.0" />
+            <Font name="Comic Sans MS" size="50.0" />
          </font>
       </Text>
       <Button layoutX="1297.0" layoutY="70.0" mnemonicParsing="false" onAction="#goToRegister" prefHeight="38.0" prefWidth="35.0" style="-fx-background-color: #8878B5;" AnchorPane.bottomAnchor="723.8" AnchorPane.leftAnchor="1310.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="33.0">

@@ -43,7 +43,7 @@
             </Text>
             <Button id="nextButton" layoutX="304.0" layoutY="397.0" mnemonicParsing="false" onAction="#createUser" prefHeight="52.0" prefWidth="126.0" style="-fx-background-color: #8878B5; -fx-border-color: #000000;" text="Next" textFill="#f2c0e6">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="Comic Sans MS Bold" size="20.0" />
                </font>
             </Button>
             <Label fx:id="ErrorMsg" layoutX="249.0" layoutY="359.0" prefHeight="18.0" prefWidth="229.0" textFill="#d31616">
@@ -58,7 +58,7 @@
       </Pane>
       <Text fill="WHITE" layoutX="619.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up" textAlignment="CENTER" AnchorPane.bottomAnchor="591.04833984375" AnchorPane.leftAnchor="619.0" AnchorPane.rightAnchor="618.0810546875" AnchorPane.topAnchor="151.81591796875">
          <font>
-            <Font name="Gidugu" size="60.0" />
+            <Font name="Comic Sans MS" size="50.0" />
          </font>
       </Text>
       <Button layoutX="1272.0" layoutY="57.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToStart" prefHeight="41.0" prefWidth="49.0" style="-fx-background-color: #8878B5;" AnchorPane.bottomAnchor="723.0" AnchorPane.leftAnchor="1310.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="33.0">

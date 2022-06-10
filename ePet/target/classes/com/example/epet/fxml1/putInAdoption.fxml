@@ -14,7 +14,7 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: #8878B5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VIEW.PutInAdoptionController">
    <children>
-      <MenuButton fx:id="kind" layoutX="98.0" layoutY="245.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" style="-fx-background-color: #f2c0e6;" text="Kind of pet:">
+      <MenuButton fx:id="kind" layoutX="98.0" layoutY="245.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #f2c0e6;" text="Kind of pet:">
         <items>
             <CheckMenuItem fx:id="bunny" mnemonicParsing="false" onAction="#setKind" text="Bunny" />
             <CheckMenuItem fx:id="cat" mnemonicParsing="false" onAction="#setKind" text="Cat" />
@@ -23,22 +23,22 @@
             <CheckMenuItem fx:id="other" mnemonicParsing="false" onAction="#setKind" text="Other" />
         </items>
          <font>
-            <Font name="Gidugu" size="19.0" />
+            <Font name="Comic Sans MS" size="17.0" />
          </font>
       </MenuButton>
       <TextField fx:id="Country" layoutX="98.0" layoutY="179.0" prefHeight="34.0" prefWidth="151.0" promptText="Country" style="-fx-background-color: #f2c0e6;">
          <font>
-            <Font name="Gidugu" size="17.0" />
+            <Font name="System" size="17.0" />
          </font></TextField>
       <Text fill="#f2c0e6" layoutX="98.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write a description">
          <font>
-            <Font name="Gidugu" size="30.0" />
+            <Font name="Comic Sans MS" size="25.0" />
          </font>
       </Text>
       <TextArea fx:id="description" layoutX="98.0" layoutY="447.0" prefHeight="200.0" prefWidth="1274.0" promptText="Write here..." AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="98.0" />
       <Button fx:id="post" layoutX="1214.0" layoutY="723.0" mnemonicParsing="false" onAction="#Post" prefHeight="42.0" prefWidth="96.0" style="-fx-background-color: #f2c0e6;" styleClass="postRadius" stylesheets="@../style.css" text="Post">
          <font>
-            <Font name="Gidugu" size="25.0" />
+            <Font name="Comic Sans MS" size="18.0" />
          </font>
       </Button>
       <ImageView fitHeight="63.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="730.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1344.6" AnchorPane.topAnchor="7.0">
@@ -51,9 +51,9 @@
             <Font name="Comic Sans MS" size="37.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="89.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Put your pet in adoption">
+      <Text fill="WHITE" layoutX="423.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Put your pet in adoption">
          <font>
-            <Font name="Gidugu" size="55.0" />
+            <Font name="Comic Sans MS" size="50.0" />
          </font>
       </Text>
       <Button layoutX="1254.0" layoutY="39.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #8878B5;">
@@ -76,23 +76,23 @@
       </Button>
       <TextField fx:id="Region" layoutX="288.0" layoutY="179.0" prefHeight="34.0" prefWidth="151.0" promptText="Region" style="-fx-background-color: #f2c0e6;">
          <font>
-            <Font name="Gidugu" size="17.0" />
+            <Font name="System" size="17.0" />
          </font>
       </TextField>
       <TextField fx:id="City" layoutX="474.0" layoutY="179.0" prefHeight="34.0" prefWidth="151.0" promptText="City" style="-fx-background-color: #f2c0e6;">
          <font>
-            <Font name="Gidugu" size="17.0" />
+            <Font name="System" size="17.0" />
          </font>
       </TextField>
       <TextArea fx:id="title" layoutX="98.0" layoutY="352.0" prefHeight="30.0" prefWidth="317.0" promptText="Write here..." />
       <Text fill="#f2c0e6" layoutX="98.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a title">
          <font>
-            <Font name="Gidugu" size="30.0" />
+            <Font name="Comic Sans MS" size="25.0" />
          </font>
       </Text>
       <Label fx:id="errorMsg" layoutX="97.0" layoutY="681.0" textFill="#dd1930">
          <font>
-            <Font name="Gidugu" size="20.0" />
+            <Font name="System" size="20.0" />
          </font>
       </Label>
    </children>

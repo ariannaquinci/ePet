@@ -51,7 +51,7 @@
       </Pane>
       <Text fill="WHITE" layoutX="646.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" AnchorPane.bottomAnchor="557.1032028198242" AnchorPane.leftAnchor="646.0" AnchorPane.rightAnchor="646.0640487670898" AnchorPane.topAnchor="149.4270477294922">
          <font>
-            <Font name="Gidugu" size="60.0" />
+            <Font name="Comic Sans MS" size="50.0" />
          </font>
       </Text>
       <Button layoutX="1243.0" layoutY="42.0" mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="38.0" style="-fx-background-color: #8878B5;" AnchorPane.bottomAnchor="723.8" AnchorPane.leftAnchor="1310.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="33.0">

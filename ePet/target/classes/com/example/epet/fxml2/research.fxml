@@ -15,7 +15,7 @@
 
 <AnchorPane prefHeight="636" prefWidth="355" style="-fx-background-color: #8878B5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VIEW2.ResearchController">
    <children>
-      <MenuButton fx:id="kind" layoutX="163.0" layoutY="53.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="130.0">
+      <MenuButton fx:id="kind" layoutX="167.0" layoutY="53.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="126.0">
          <items>
             <CheckMenuItem fx:id="bunny" mnemonicParsing="false" onAction="#setKind" text="Bunny" />
             <CheckMenuItem fx:id="cat" mnemonicParsing="false" onAction="#setKind" text="Cat" />
@@ -43,9 +43,9 @@
          </font>
       </TextField>
       <Button fx:id="search" layoutX="228.0" layoutY="305.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: #f2c0e6;" text="Search" />
-      <Label layoutX="63.0" layoutY="53.0" prefHeight="44.0" prefWidth="98.0" text="Kind of pet:">
+      <Label layoutX="63.0" layoutY="53.0" prefHeight="44.0" prefWidth="125.0" text="Kind of pet:">
          <font>
-            <Font name="Gidugu" size="21.0" />
+            <Font size="18.0" />
          </font>
       </Label>
       <ScrollPane layoutY="367.0" prefHeight="269.0" prefWidth="352.0" style="-fx-background-color: #f2c0e6;">

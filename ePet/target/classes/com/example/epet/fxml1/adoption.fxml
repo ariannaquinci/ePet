@@ -18,14 +18,14 @@
    <children>
       <Text fill="WHITE" layoutX="131.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select filters for your research:" wrappingWidth="375.70111083984375" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="933.0" AnchorPane.topAnchor="159.25622940063477">
          <font>
-            <Font name="Gidugu" size="36.0" />
+            <Font name="Comic Sans MS" size="20.0" />
          </font>
       </Text>
       <Pane layoutX="70.0" layoutY="216.0" prefHeight="491.0" prefWidth="498.0" style="-fx-background-color: #f2c0e6;" AnchorPane.bottomAnchor="93.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="872.0" AnchorPane.topAnchor="216.0">
          <children>
             <TextField fx:id="country" layoutX="89.0" layoutY="229.0" prefHeight="48.0" prefWidth="235.0" promptText="Country">
                <font>
-                  <Font name="Gidugu" size="20.0" />
+                  <Font name="System" size="20.0" />
                </font>
             </TextField>
             <Button fx:id="search" layoutX="356.0" layoutY="421.0" mnemonicParsing="false" onAction="#search" prefHeight="63.0" prefWidth="68.0" style="-fx-background-color: #f2c0e6;">
@@ -39,15 +39,15 @@
             </Button>
             <TextField fx:id="region" layoutX="89.0" layoutY="322.0" prefHeight="48.0" prefWidth="235.0" promptText="Region">
                <font>
-                  <Font name="Gidugu" size="20.0" />
+                  <Font name="System" size="20.0" />
                </font>
             </TextField>
             <TextField fx:id="city" layoutX="89.0" layoutY="132.0" prefHeight="48.0" prefWidth="235.0" promptText="City">
                <font>
-                  <Font name="Gidugu" size="20.0" />
+                  <Font name="System" size="20.0" />
                </font>
             </TextField>
-            <MenuButton fx:id="kind" layoutX="194.0" layoutY="43.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="130.0">
+            <MenuButton fx:id="kind" layoutX="219.0" layoutY="43.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="105.0">
                <items>
                   <CheckMenuItem fx:id="bunny" mnemonicParsing="false" onAction="#setKind" text="Bunny" />
                   <CheckMenuItem fx:id="cat" mnemonicParsing="false" onAction="#setKind" text="Cat" />
@@ -56,12 +56,12 @@
                   <CheckMenuItem fx:id="other" mnemonicParsing="false" onAction="#setKind" text="Other" />
                </items>
                <font>
-                  <Font name="Gidugu" size="19.0" />
+                  <Font name="System" size="19.0" />
                </font>
             </MenuButton>
-            <Label layoutX="91.0" layoutY="43.0" prefHeight="44.0" prefWidth="115.0" text="Kind of pet:">
+            <Label layoutX="91.0" layoutY="43.0" prefHeight="44.0" prefWidth="123.0" text="Kind of pet:">
                <font>
-                  <Font name="Gidugu" size="21.0" />
+                  <Font name="Comic Sans MS" size="21.0" />
                </font>
             </Label>
          </children>
@@ -89,7 +89,7 @@
          <children>
             <Label fx:id="noResults" prefHeight="49.0" prefWidth="681.0" textAlignment="CENTER" textFill="#d70c0c">
                <font>
-                  <Font name="Gidugu" size="30.0" />
+                  <Font name="System" size="18.0" />
                </font>
             </Label>
             <ScrollPane layoutY="43.0" prefHeight="448.0" prefWidth="698.0" style="-fx-background-color: #f2c0e6;">
@@ -101,7 +101,7 @@
       </Pane>
       <Text fill="WHITE" layoutX="987.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results:">
          <font>
-            <Font name="Gidugu" size="36.0" />
+            <Font name="Comic Sans MS" size="20.0" />
          </font>
       </Text>
    </children>

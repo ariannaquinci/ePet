@@ -25,7 +25,7 @@
       </ImageView>
       <Text fill="#f4f1f1" layoutX="522.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here are your favorite posts:" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="521.0382385253906" AnchorPane.topAnchor="70.39146041870117">
          <font>
-            <Font name="Gidugu" size="55.0" />
+            <Font name="Comic Sans MS" size="50.0" />
          </font>
       </Text>
       <Button fx:id="back" layoutX="1273.0" layoutY="12.0" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="42.0" style="-fx-background-color: #8878B5;" AnchorPane.bottomAnchor="723.0" AnchorPane.leftAnchor="1310.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="33.0">
@@ -46,12 +46,12 @@
             </ScrollPane>
             <Button layoutX="7.0" layoutY="12.0" mnemonicParsing="false" onAction="#showFavorites" prefHeight="51.0" prefWidth="175.0" style="-fx-background-color: #f2c0e6;" text="Show Favorites">
                <font>
-                  <Font name="Gidugu" size="22.0" />
+                  <Font name="Comic Sans MS" size="20.0" />
                </font>
             </Button>
             <Label fx:id="noResults" layoutX="8.0" layoutY="70.0" prefHeight="40.0" prefWidth="921.0" textFill="#dd2323">
                <font>
-                  <Font name="Gidugu" size="25.0" />
+                  <Font name="System" size="25.0" />
                </font>
             </Label>
          </children>

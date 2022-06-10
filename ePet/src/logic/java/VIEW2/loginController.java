@@ -50,8 +50,7 @@ public class loginController {
 
             credentials.verifyFields(unField.getText(), pwField.getText());
             CONTROLLER.LoginController.getInstance().Login(credentials);
-        } catch (FailedLoginException e) {
-            throw new RuntimeException();
+
         }catch (InvalidFieldException i){
             wrongAccess.setText(String.valueOf(i.getMessage()));
         }catch (SQLException s){

@@ -57,7 +57,7 @@
             </ImageView>
             <Text fill="WHITE" layoutX="574.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's get started!" textAlignment="LEFT" AnchorPane.bottomAnchor="556.5917739868164" AnchorPane.leftAnchor="537.0" AnchorPane.rightAnchor="537.0" AnchorPane.topAnchor="149.9384765625">
                <font>
-                  <Font name="Gidugu" size="60.0" />
+                  <Font name="Comic Sans MS" size="50.0" />
                </font>
             </Text>
             <Pane layoutX="342.0" layoutY="243.0" prefHeight="488.0" prefWidth="732.0" style="-fx-background-color: #f2c0e6;" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="334.0" AnchorPane.topAnchor="243.0">

@@ -59,7 +59,10 @@
             </exclusions>
         </dependency>
 
-
+                 <properties>
+                    <sonar.organization>ariannaquinci</sonar.organization>
+                   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+                  </properties>
         <dependency>
             <groupId>org.kordamp.ikonli</groupId>
             <artifactId>ikonli-javafx</artifactId>

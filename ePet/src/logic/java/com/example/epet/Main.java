@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import utils.*;
 
 import java.io.IOException;
@@ -15,17 +16,35 @@ import java.io.IOException;
 public class Main extends Application {
     private static Stage stg;
     private static Stage previous;
+    private static Scene scene;
+    private static Scene prev_scene;
 
     public static Stage getStage(){return stg;}
 
 
     public static void setPrevious(Stage stage){previous=stage;}
     public static Stage getPrevious(){return previous;}
+    public static void setPrevScene(Scene sc){
+        prev_scene=sc;
+    }
+    public static Scene getPrevScene(){
+       return prev_scene;
+    }
+
+    public static void setScene(Scene sc){
+        scene=sc;
+    }
+    public static Scene getScene(){
+        return scene;
+    }
 
     public static void setStage(Stage stage){stg=stage;}
 
-    public void createPopupScene(String fxml) throws IOException{
+   public Stage createPopupScene(String fxml) throws IOException{
 
+
+        setPrevious(stg);
+        setPrevScene(scene);
 
         FXMLLoader loader= new FXMLLoader();
         Parent root=loader.load(getClass().getResource(fxml));
@@ -36,19 +55,27 @@ public class Main extends Application {
         stage.initModality(Modality.APPLICATION_MODAL);
 
         stage.initOwner(getStage().getScene().getWindow());
+        setScene(stg.getScene());
+
+         setStage(stage);
+       return stage;
 
 
-        setPrevious(stg);
-        setStage(stage);
-        stage.showAndWait();
-//sistemare quando chiudo finestra popup
         }
 
-    public void changeScene(String fxml) throws IOException{
 
+
+
+    public Scene changeScene(String fxml) throws IOException{
+        setPrevScene(stg.getScene());
         Parent pane= FXMLLoader.load(getClass().getResource(fxml));
 
         stg.getScene().setRoot(pane);
+        setScene(stg.getScene());
+        if(previous!=null){
+        previous.close();}
+        stg.show();
+        return getScene();
     }
 
 
@@ -134,10 +161,13 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         stg=stage;
         stage.setResizable(false);
+
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml1/start_menu.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1400, 800);
         stage.setTitle("ePet");
         stage.setScene(scene);
+        setScene(stg.getScene());
+        setPrevScene(null);
         stage.show();
     }
 

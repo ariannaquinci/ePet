@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="636.0" prefWidth="355.0" style="-fx-background-color: #8878B5; -fx-background-radius: 0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VIEW2.loginController">
    <children>
-      <Text fill="WHITE" layoutX="132.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login:">
+      <Text fill="WHITE" layoutX="145.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login:">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>

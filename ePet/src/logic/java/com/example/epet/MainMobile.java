@@ -14,14 +14,37 @@ import java.io.IOException;
 
 
 public class MainMobile extends Application {
+    private static Stage stg;
+    private static Stage previous;
+    private static Scene scene;
+    private static Scene prev_scene;
 
-        private static Stage stg;
-        private static Stage previous;
+    public static Stage getStage(){return stg;}
 
-        public static Stage getStage(){return stg;}
 
-    public void createPopupScene(String fxml) throws IOException{
+    public static void setPrevious(Stage stage){previous=stage;}
+    public static Stage getPrevious(){return previous;}
+    public static void setPrevScene(Scene sc){
+        prev_scene=sc;
+    }
+    public static Scene getPrevScene(){
+        return prev_scene;
+    }
 
+    public static void setScene(Scene sc){
+        scene=sc;
+    }
+    public static Scene getScene(){
+        return scene;
+    }
+
+    public static void setStage(Stage stage){stg=stage;}
+
+    public Stage createPopupScene(String fxml) throws IOException{
+
+
+        setPrevious(stg);
+        setPrevScene(scene);
 
         FXMLLoader loader= new FXMLLoader();
         Parent root=loader.load(getClass().getResource(fxml));
@@ -32,26 +55,28 @@ public class MainMobile extends Application {
         stage.initModality(Modality.APPLICATION_MODAL);
 
         stage.initOwner(getStage().getScene().getWindow());
+        setScene(stg.getScene());
 
-
-        setPrevious(stg);
         setStage(stage);
-        stage.showAndWait();
+        return stage;
+
 
 
     }
 
 
-        public static void setPrevious(Stage stage){previous=stage;}
-        public static Stage getPrevious(){return previous;}
-
-        public static void setStage(Stage stage){stg=stage;}
 
 
-        public void changeScene(String fxml) throws IOException{
-
+        public Scene changeScene(String fxml) throws IOException{
+            setPrevScene(stg.getScene());
             Parent pane= FXMLLoader.load(getClass().getResource(fxml));
+
             stg.getScene().setRoot(pane);
+            setScene(stg.getScene());
+            if(previous!=null){
+                previous.close();}
+            stg.show();
+            return getScene();
         }
 
     public SlotItem getSlotItem(String fxml) throws IOException {

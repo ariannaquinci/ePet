@@ -12,7 +12,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="636.0" prefWidth="355.0" style="-fx-background-color: #8878B5; -fx-background-radius: 0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VIEW2.writeController">
    <children>
       <TextField fx:id="Country" layoutX="41.0" layoutY="84.0" prefHeight="41.0" prefWidth="279.0" promptText="Country" style="-fx-background-color: #f2c0e6;">
@@ -39,7 +38,7 @@
             <CheckMenuItem fx:id="other" mnemonicParsing="false" onAction="#setKind" text="Other" />
          </items>
          <font>
-            <Font name="Gidugu" size="19.0" />
+            <Font size="15.0" />
          </font>
       </MenuButton>
       <TextArea fx:id="title" layoutX="43.0" layoutY="345.0" prefHeight="38.0" prefWidth="279.0" promptText="Write here..." />
@@ -49,7 +48,15 @@
             <Font name="Gidugu" size="25.0" />
          </font>
       </Button>
-      <Button layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #8878B5;">
+      <Text fill="WHITE" layoutX="40.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write a description:" />
+      <Text fill="WHITE" layoutX="40.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write a title" />
+      <Label fx:id="errorMsg" layoutX="42.0" layoutY="539.0" prefHeight="16.0" prefWidth="266.0" textAlignment="CENTER" textFill="#bc2525" />
+      <Text fill="WHITE" layoutX="131.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write post:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="12.0" layoutY="8.0" mnemonicParsing="false" onAction="#goBack" prefHeight="39.0" prefWidth="15.0" style="-fx-background-color: #8878B5;">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -58,8 +65,5 @@
             </ImageView>
          </graphic>
       </Button>
-      <Text fill="WHITE" layoutX="40.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write a description:" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write a title" />
-      <Label fx:id="errorMsg" layoutX="42.0" layoutY="539.0" prefHeight="16.0" prefWidth="266.0" textAlignment="CENTER" textFill="#bc2525" />
    </children>
 </AnchorPane>

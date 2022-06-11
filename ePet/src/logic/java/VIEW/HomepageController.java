@@ -3,6 +3,7 @@ package VIEW;
 import com.example.epet.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -14,7 +15,10 @@ public class HomepageController {
            Main H=new Main();
 
 
-            H.createPopupScene("fxml1/profile.fxml");
+           Stage popup= H.createPopupScene("fxml1/profile.fxml");
+
+           popup.show();
+
 
         }
 
@@ -50,7 +54,9 @@ public class HomepageController {
         @FXML
         protected void notifications() throws IOException {
             Main M = new Main();
-            M.createPopupScene("fxml1/notifications.fxml");
+            Stage popup= M.createPopupScene("fxml1/notifications.fxml");
+            popup.centerOnScreen();
+            popup.show();
         }
 
     public void scheduledApps(ActionEvent event) throws IOException {

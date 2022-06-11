@@ -6,6 +6,7 @@ import com.example.epet.MainMobile;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 import utils.Kind;
 
 import java.io.File;
@@ -84,9 +85,9 @@ public class writeController {
     private TextField slot4time;
 
     @FXML
-    protected void back() throws IOException {
-        MainMobile m=new MainMobile();
-        m.changeScene("fxml1/homepage.fxml");
+    protected void goBack() throws IOException {
+        MainMobile M= new MainMobile();
+        M.changeScene("fxml2/HomepageMobile.fxml");
     }
 
 
@@ -179,7 +180,8 @@ public class writeController {
             CONTROLLER.ManagePostController.getInstance().writePost(postBean);
             MainMobile H=new MainMobile();
             H.changeScene("fxml2/HomepageMobile.fxml");
-            H.createPopupScene("fxml2/post.fxml");
+            Stage popup =H.createPopupScene("fxml2/post.fxml");
+            popup.show();
 
 
         }catch(SQLException r){

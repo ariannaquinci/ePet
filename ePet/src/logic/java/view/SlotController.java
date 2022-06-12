@@ -28,8 +28,9 @@ public class SlotController {
                 place.setText(address);
                 time.setText(date);
         }
+        @FXML
 
-        public void delete(ActionEvent event) {
+        protected void delete() {
            SlotAppuntamentoBean bean = new SlotAppuntamentoBean();
             bean.setPost(post.getText());
             bean.setAddress(place.getText());

@@ -218,6 +218,7 @@
       <workItem from="1654959308817" duration="63000" />
       <workItem from="1655018752999" duration="185000" />
       <workItem from="1655019190367" duration="114000" />
+      <workItem from="1655023894107" duration="632000" />
     </task>
     <servers />
   </component>
@@ -374,31 +375,6 @@
           <url>file://$PROJECT_DIR$/src/logic/java/model/DAO/AppointmentRequestDAO.java</url>
           <line>88</line>
           <option name="timeStamp" value="159" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/logic/java/view/AppRequestController.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/logic/java/view/AppRequestController.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/logic/java/view/AppRequestController.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/logic/java/view/AppRequestController.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/logic/java/view/AppRequestController.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/logic/java/view/ScheduledAppController.java</url>
@@ -752,7 +728,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/logic/java/com/example/epet/Main.java</url>
-          <line>76</line>
+          <line>77</line>
           <option name="timeStamp" value="277" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

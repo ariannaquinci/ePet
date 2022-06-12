@@ -1,5 +1,7 @@
 package view;
 
+
+
 import beans.AppointmentRequestBean;
 import controller.ManageAppointmentController;
 import service.SessionFacade;
@@ -10,23 +12,23 @@ import javafx.scene.layout.Pane;
 
 import java.sql.SQLException;
 
-public class AppRequestController {
-    @FXML
-    private TextArea Date;
+    public class AppRequestController {
+        @FXML
+        private TextArea Date;
 
-    @FXML
-    private TextArea Place;
+        @FXML
+        private TextArea Place;
 
-    @FXML
-    private TextArea account;
+        @FXML
+        private TextArea account;
 
-    @FXML
-    private Pane item;
-    @FXML
-    private Label post;
+        @FXML
+        private Pane item;
+        @FXML
+        private Label post;
 
-    @FXML
-    protected void acceptAppRequest(){
+        @FXML
+        protected void acceptAppRequest(){
             AppointmentRequestBean bean= new AppointmentRequestBean();
             bean.setApplicant(account.getText());
             bean.setDate(Date.getText());
@@ -41,25 +43,27 @@ public class AppRequestController {
                 throw new RuntimeException(e);
             }
 
-    }
-    @FXML
-    protected void denyAppRequest() {
-        AppointmentRequestBean bean= new AppointmentRequestBean();
-        bean.setPost(post.getText());
-        bean.setApplicant(account.getText());
-        try{
-            ManageAppointmentController.getInstance().denyApp(bean);
-            item.setVisible(false);
-        }catch(SQLException s){
-            s.getMessage();
         }
+        @FXML
+        protected void denyAppRequest() {
+            AppointmentRequestBean bean= new AppointmentRequestBean();
+            bean.setPost(post.getText());
+            bean.setApplicant(account.getText());
+            try{
+                ManageAppointmentController.getInstance().denyApp(bean);
+                item.setVisible(false);
+            }catch(SQLException s){
+                s.getMessage();
+            }
+        }
+
+        public void setData(String date, String place, String acc,String id){
+            Date.setText(date);
+            Place.setText(place);
+            account.setText(acc);
+            post.setText(id);
+        }
+
     }
 
-    public void setData(String date, String place, String acc,String id){
-        Date.setText(date);
-        Place.setText(place);
-        account.setText(acc);
-        post.setText(id);
-    }
 
-}

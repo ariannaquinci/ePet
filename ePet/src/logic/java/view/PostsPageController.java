@@ -32,7 +32,7 @@ public class PostsPageController {
 
             for(PostBean i: list) {
             Main M= new Main();
-            PostItem p= M.getPostItem("fxml1/PostItem.fxml");
+            PostItem p= M.getPostItem("fxml1/post_item.fxml");
             PostItemController postItemController=p.getController();
             Pane pane=p.getPane();
 

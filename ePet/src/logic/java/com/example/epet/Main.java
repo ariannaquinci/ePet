@@ -9,6 +9,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import utils.*;
+import view2.AppRequestController;
 
 import java.io.IOException;
 
@@ -116,7 +117,7 @@ public class Main extends Application {
         FXMLLoader fxmlLoader= new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource(fxml));
         Pane pane= fxmlLoader.load();
-        AppRequestController appReqControl=fxmlLoader.getController();
+        view.AppRequestController appReqControl=fxmlLoader.getController();
         AppReqItem p= new AppReqItem();
         p.setPane(pane);
         p.setController(appReqControl);

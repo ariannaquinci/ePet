@@ -45,8 +45,8 @@ public class FavoriteItemController {
         resultsBox.getChildren().clear();
 
         for(SlotAppuntamentoBean i: list) {
-            Main M= new Main();
-            PostSlotItem p= M.getPostSlotItem("fxml1/postSlotItem.fxml");
+            Main m= new Main();
+            PostSlotItem p= m.getPostSlotItem("fxml1/postSlotItem.fxml");
             PostSlotItemController slotControl=p.getController();
             Pane pane=p.getPane();
 

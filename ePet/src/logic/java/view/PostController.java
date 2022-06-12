@@ -9,7 +9,7 @@ public class PostController {
 
 
     public void goHome() throws IOException{
-        Main H= new Main();
-        H.changeScene("fxml1/homepage.fxml");
+        Main m= new Main();
+        m.changeScene("fxml1/homepage.fxml");
     }
 }

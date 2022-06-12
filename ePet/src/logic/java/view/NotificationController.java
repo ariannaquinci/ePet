@@ -21,8 +21,7 @@ public class NotificationController {
     private Label noResults;
     @FXML
     private VBox results;
-    @FXML
-    private VBox post;
+
 
     @FXML
     protected void showAppRequests(){
@@ -42,8 +41,8 @@ public class NotificationController {
         results.getChildren().clear();
 
         for(AppointmentRequestBean i: list) {
-            Main M= new Main();
-            AppReqItem p= M.getAppReqItem("fxml1/appRequestItem.fxml");
+            Main m= new Main();
+            AppReqItem p= m.getAppReqItem("fxml1/appRequestItem.fxml");
             AppRequestController appReqController=p.getController();
             Pane pane=p.getPane();
 

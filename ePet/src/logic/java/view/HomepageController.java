@@ -12,10 +12,10 @@ public class HomepageController {
         @FXML
         protected void goToProfile() throws IOException{
 
-           Main H=new Main();
+           Main m=new Main();
 
 
-           Stage popup= H.createPopupScene("fxml1/profile.fxml");
+           Stage popup= m.createPopupScene("fxml1/profile.fxml");
 
            popup.show();
 
@@ -24,14 +24,14 @@ public class HomepageController {
 
         @FXML
         protected void adoptAPet() throws IOException{
-            Main H= new Main();
-            H.changeScene("fxml1/adoption.fxml");
+            Main m= new Main();
+            m.changeScene("fxml1/adoption.fxml");
 
         }
         @FXML
         protected void putAPetInAdoption() throws IOException{
-            Main H= new Main();
-            H.changeScene("fxml1/putInAdoption.fxml");
+            Main m= new Main();
+            m.changeScene("fxml1/putInAdoption.fxml");
 
 
         }
@@ -39,29 +39,29 @@ public class HomepageController {
         @FXML
         protected void showFavorites() throws IOException{
 
-            Main H= new Main();
-            H.changeScene("fxml1/favorites.fxml");
+            Main m= new Main();
+            m.changeScene("fxml1/favorites.fxml");
 
         }
         @FXML
         protected void myPosts() throws IOException {
 
-            Main H= new Main();
-            H.changeScene("fxml1/posts_page.fxml");
+            Main m= new Main();
+            m.changeScene("fxml1/posts_page.fxml");
 
 
             }
         @FXML
         protected void notifications() throws IOException {
-            Main M = new Main();
-            Stage popup= M.createPopupScene("fxml1/notifications.fxml");
+            Main m = new Main();
+            Stage popup= m.createPopupScene("fxml1/notifications.fxml");
             popup.centerOnScreen();
             popup.show();
         }
 
     public void scheduledApps(ActionEvent event) throws IOException {
-            Main M=new Main();
-            M.changeScene("fxml1/scheduled_app.fxml");
+            Main m=new Main();
+            m.changeScene("fxml1/scheduled_app.fxml");
     }
 }
 

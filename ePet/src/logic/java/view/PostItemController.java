@@ -10,7 +10,6 @@ import com.example.epet.Main;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -24,47 +23,53 @@ import java.sql.SQLException;
 public class PostItemController {
 
     @FXML
-    private Button appButton;
-    @FXML
-    private Label noResults;
+    private TextField address;
+
+
 
     @FXML
-    private Pane item;
+    private TextArea city;
+
+    @FXML
+    private TextArea country;
+
     @FXML
     private TextArea description;
 
     @FXML
-    private Button editButton;
+    private Label errorMsg;
 
     @FXML
-    private Label titleLabel;
+    private Label id;
+
     @FXML
-    private TextArea Country;
+    private Pane item;
+
+    @FXML
+    private Label noResults;
+
+    @FXML
+    private TextArea region;
+
     @FXML
     private HBox resultsBox;
-    @FXML
-    private TextArea Region;
-    @FXML
-    private TextArea City;
-    @FXML
-    private Label ID;
-    @FXML
-    private Label errorMsg;
-    @FXML
-    private TextField address;
+
     @FXML
     private TextField time;
 
+    @FXML
+    private Label titleLabel;
 
 
 
-    public void setData( String title, String desc, String country, String city, String region,String id){
-        ID.setText(id);
+
+    public void setData( String title, String desc, String c, String ci, String reg,String idpost){
+        id.setText(idpost);
         titleLabel.setText(title);
         description.setText(desc);
-        Country.setText(country);
-        Region.setText(region);
-        City.setText(city);
+        country.setText(c);
+        region.setText(reg);
+        city.setText(ci);
 
 
     }
@@ -72,22 +77,16 @@ public class PostItemController {
         return description.getText();
     }
     public String getCountry(){
-        return Country.getText();
+        return country.getText();
     }
     public String getRegion(){
-        return Region.getText();
+        return region.getText();
     }
     public String getCity(){
-        return City.getText();
+        return city.getText();
     }
-    public String getID(){return ID.getText();}
+    public String getID(){return id.getText();}
 
-
-    public void editPost() throws IOException {
-
-
-
-    }
 
 
     public void deletePost()  {
@@ -104,7 +103,7 @@ public class PostItemController {
     @FXML
     protected void add_slot() {
         SlotAppuntamentoBean slotBean = new SlotAppuntamentoBean();
-        slotBean.setPost(ID.getText());
+        slotBean.setPost(id.getText());
         slotBean.setAddress(address.getText());
         slotBean.setDate(time.getText());
         try {
@@ -119,7 +118,7 @@ public class PostItemController {
     @FXML
     protected void show_slots() throws IOException{
         SlotAppuntamentoBean bean= new SlotAppuntamentoBean();
-        bean.setPost(ID.getText());
+        bean.setPost(id.getText());
         try{
             noResults.setText("");
             initResults(ManageSlotsController.getInstance().showSlots(bean));
@@ -135,8 +134,8 @@ public class PostItemController {
         resultsBox.getChildren().clear();
 
         for(SlotAppuntamentoBean i: list) {
-            Main M= new Main();
-            SlotItem p= M.getSlotItem("fxml1/slotItem.fxml");
+            Main m= new Main();
+            SlotItem p= m.getSlotItem("fxml1/slotItem.fxml");
             SlotController slotControl=p.getController();
             Pane pane=p.getPane();
 

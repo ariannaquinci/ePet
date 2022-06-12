@@ -14,16 +14,17 @@ import java.sql.SQLException;
 
     public class AppRequestController {
         @FXML
-        private TextArea Date;
-
-        @FXML
-        private TextArea Place;
-
-        @FXML
         private TextArea account;
 
         @FXML
+        private TextArea date;
+
+        @FXML
         private Pane item;
+
+        @FXML
+        private TextArea place;
+
         @FXML
         private Label post;
 
@@ -31,9 +32,9 @@ import java.sql.SQLException;
         protected void acceptAppRequest(){
             AppointmentRequestBean bean= new AppointmentRequestBean();
             bean.setApplicant(account.getText());
-            bean.setDate(Date.getText());
+            bean.setDate(date.getText());
             bean.setReceiver(SessionFacade.getSession().getID());
-            bean.setPlace(Place.getText());
+            bean.setPlace(place.getText());
             try{
                 ManageAppointmentController.getInstance().acceptApp(bean);
                 item.setVisible(false);
@@ -57,9 +58,9 @@ import java.sql.SQLException;
             }
         }
 
-        public void setData(String date, String place, String acc,String id){
-            Date.setText(date);
-            Place.setText(place);
+        public void setData(String d, String p, String acc,String id){
+            date.setText(d);
+            place.setText(p);
             account.setText(acc);
             post.setText(id);
         }

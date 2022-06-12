@@ -8,7 +8,6 @@ import com.example.epet.Main;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -27,8 +26,7 @@ public class ProfileController {
 
     @FXML
     private TextField nickname;
-    @FXML
-    private Pane pane;
+
 
 
     @FXML

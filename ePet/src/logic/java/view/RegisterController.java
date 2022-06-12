@@ -22,7 +22,7 @@ public class RegisterController {
     @FXML
     private PasswordField confPwField;
     @FXML
-    private Label ErrorMsg;
+    private Label errorMsg;
 
     @FXML
     private RadioButton type;
@@ -34,8 +34,8 @@ public class RegisterController {
     }
     @FXML
     protected void goToStart() throws IOException {
-        Main H = new Main();
-        H.changeScene("fxml1/start_menu.fxml");
+        Main m = new Main();
+        m.changeScene("fxml1/start_menu.fxml");
     }
 
 
@@ -52,21 +52,21 @@ public class RegisterController {
             credentials.verifySignUpSyntax(confPwField.getText());
             controller.RegisterController.getInstance().Register(credentials);
             LoginController.getInstance().Login(credentials);
-            Main H= new Main();
-            H.changeScene("fxml1/register2.fxml");
+            Main m= new Main();
+            m.changeScene("fxml1/register2.fxml");
 
         }catch(InvalidFieldException i){
-            ErrorMsg.setText(String.valueOf(i.getMessage()));
+            errorMsg.setText(String.valueOf(i.getMessage()));
         }catch (DuplicatedUserException d){
             try{
                  LoginController.getInstance().Login(credentials);
-                 Main H= new Main();
-                  H.changeScene("fxml1/register2.fxml");
+                 Main m= new Main();
+                 m.changeScene("fxml1/register2.fxml");
             }catch(SQLException s){
-                      ErrorMsg.setText(s.getMessage());
+                      errorMsg.setText(s.getMessage());
             }
         } catch (SQLException e) {
-            ErrorMsg.setText(e.getMessage());
+            errorMsg.setText(e.getMessage());
 
         }
 

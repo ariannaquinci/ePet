@@ -14,28 +14,31 @@ import java.sql.SQLException;
 
 public class ScheduledAppItemController {
 
-    @FXML
-    private Label id;
-    @FXML
-    private TextArea Date;
-
-    @FXML
-    private TextArea Place;
 
     @FXML
     private TextArea account;
 
     @FXML
-    private Pane item;
-
-
+    private TextArea date;
 
     @FXML
-    private Label post;
+    private Label id;
+
+    @FXML
+    private Pane item;
+
+    @FXML
+    private TextArea place;
+
+
+
+
+
+
 
     public void setData(String data, String location , String usr1, String usr2,String ID){
-            Date.setText(data);
-            Place.setText(location);
+            date.setText(data);
+            place.setText(location);
             id.setText(ID);
             if(usr1.equals(SessionFacade.getSession().getID())){
                 account.setText(usr2);

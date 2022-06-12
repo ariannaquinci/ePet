@@ -30,14 +30,12 @@ public class PetItemController {
 
     @FXML
     private HBox resultsBox;
-    @FXML
-    private ImageView petPic;
+
     @FXML
     private Label titleLabel;
     @FXML
     private TextArea description;
-    @FXML
-    private Button appButton;
+
     @FXML
     private Label creator;
     @FXML
@@ -46,9 +44,7 @@ public class PetItemController {
     public String getTitle(){
         return titleLabel.getText();
     }
-    public String getDesc(){
-        return description.getText();
-    }
+
 
     @FXML
     protected void addToFavorites(){
@@ -82,8 +78,8 @@ public class PetItemController {
         resultsBox.getChildren().clear();
 
         for(SlotAppuntamentoBean i: list) {
-            Main M= new Main();
-            PostSlotItem p= M.getPostSlotItem("fxml1/postSlotItem.fxml");
+            Main m= new Main();
+            PostSlotItem p= m.getPostSlotItem("fxml1/postSlotItem.fxml");
             PostSlotItemController slotControl=p.getController();
             Pane pane=p.getPane();
 
@@ -97,11 +93,8 @@ public class PetItemController {
 
     }
 
-    public void setData( String title, String desc,String cr, String id,File img){
-        if(img!=null){
-            Image imag= new Image(img.toURI().toString());
-            petPic.setImage(imag);
-        }
+    public void setData( String title, String desc,String cr, String id){
+
 
         titleLabel.setText(title);
         description.setText(desc);

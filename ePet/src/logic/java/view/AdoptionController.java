@@ -83,7 +83,7 @@ public class AdoptionController {
             bunny.setDisable(true);
             kind.setText("other");
         }
-        if(dog.isSelected()==false&&cat.isSelected()==false&&bunny.isSelected()==false&&hamster.isSelected()==false&&other.isSelected()==false){
+        if(!dog.isSelected()&&!cat.isSelected()&&!bunny.isSelected()&&!hamster.isSelected()&&!other.isSelected()){
             dog.setDisable(false);
             cat.setDisable(false);
             hamster.setDisable(false);
@@ -102,15 +102,15 @@ public class AdoptionController {
 
     public Kind selectKind(){
 
-        if(kind.getText()=="dog"){return DOG;}
+        if(kind.getText().equals("dog")){return DOG;}
 
-        else if(kind.getText()=="cat"){return CAT;}
+        else if(kind.getText().equals("cat")){return CAT;}
 
-        else if(kind.getText()=="bunny"){return BUNNY;}
+        else if(kind.getText().equals("bunny")){return BUNNY;}
 
-        else if(kind.getText()=="hamster"){return HAMSTER;}
+        else if(kind.getText().equals("hamster")){return HAMSTER;}
 
-        else if(kind.getText()=="other"){return OTHER;}
+        else if(kind.getText().equals("other")){return OTHER;}
         else {
 
             return null;}
@@ -123,20 +123,15 @@ public class AdoptionController {
         resultsBox.getChildren().clear();
 
         for(PostBean i: list) {
-               Main M= new Main();
-               PetItem p= M.getItem("fxml1/petItem.fxml");
+               Main m= new Main();
+               PetItem p= m.getItem("fxml1/petItem.fxml");
                PetItemController petItemController=p.getController();
                Pane pane=p.getPane();
 
 
-                File image= null;
-                if(i.getPic()!=null){
-                    image=i.getPic();
-                    petItemController.setData( i.getTitle(), i.getDescription(), i.getCreator(),i.getID(),image);
 
-                }
 
-                petItemController.setData( i.getTitle(), i.getDescription(),i.getCreator(),i.getID(),null);
+                petItemController.setData( i.getTitle(), i.getDescription(),i.getCreator(),i.getID());
             resultsBox.getChildren().add(pane);
             resultsBox.setMargin(pane,new Insets(10,10,10,10));
 

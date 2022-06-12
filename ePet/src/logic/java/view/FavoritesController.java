@@ -29,8 +29,8 @@ public class FavoritesController {
         resultsBox.getChildren().clear();
 
         for(FavoriteBean i: list) {
-            Main M= new Main();
-            FavoriteItem p= M.getFavItem("fxml1/FavoriteItem.fxml");
+            Main m= new Main();
+            FavoriteItem p= m.getFavItem("fxml1/FavoriteItem.fxml");
             FavoriteItemController favItemController=p.getController();
             Pane pane=p.getPane();
 
@@ -47,8 +47,8 @@ public class FavoritesController {
 
     @FXML
     protected void goBack() throws IOException {
-        Main M=new Main();
-        M.changeScene("fxml1/homepage.fxml");
+        Main m=new Main();
+        m.changeScene("fxml1/homepage.fxml");
     }
    @FXML
     protected void showFavorites() throws IOException{

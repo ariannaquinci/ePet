@@ -9,7 +9,6 @@ import utils.PostItem;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -17,8 +16,7 @@ import javafx.scene.layout.VBox;
 import java.io.IOException;
 
 public class PostsPageController {
-    @FXML
-    private Button back;
+
 
     @FXML
     private VBox resultsBox;
@@ -31,8 +29,8 @@ public class PostsPageController {
             resultsBox.getChildren().clear();
 
             for(PostBean i: list) {
-            Main M= new Main();
-            PostItem p= M.getPostItem("fxml1/post_item.fxml");
+            Main m= new Main();
+            PostItem p= m.getPostItem("fxml1/post_item.fxml");
             PostItemController postItemController=p.getController();
             Pane pane=p.getPane();
 
@@ -46,8 +44,8 @@ public class PostsPageController {
 
     }
     public void goBack() throws IOException {
-        Main M=new Main();
-        M.changeScene("fxml1/homepage.fxml");
+        Main m=new Main();
+        m.changeScene("fxml1/homepage.fxml");
     }
 
     public void showPosts() throws IOException {

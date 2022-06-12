@@ -16,14 +16,14 @@ public class StartController {
     @FXML
     protected void onLoginButtonClick() throws IOException{
 
-        Main H= new Main();
-        H.changeScene("fxml1/login.fxml");
+        Main m= new Main();
+        m.changeScene("fxml1/login.fxml");
     }
 
     @FXML
     protected void onRegisterButtonClick() throws IOException {
-        Main H= new Main();
-        H.changeScene("fxml1/register1.fxml");
+        Main m= new Main();
+        m.changeScene("fxml1/register1.fxml");
     }
 
 

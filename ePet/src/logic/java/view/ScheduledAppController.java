@@ -21,16 +21,16 @@ public class ScheduledAppController {
     @FXML
     private Label noResults;
     public void goBack() throws IOException {
-        Main M=new Main();
-        M.changeScene("fxml1/homepage.fxml");
+        Main m=new Main();
+        m.changeScene("fxml1/homepage.fxml");
     }
     private void initResults(ObservableList<ScheduledAppointmentBean> list) throws IOException, NoResultFoundException {
 
         resultsBox.getChildren().clear();
 
         for(ScheduledAppointmentBean i: list) {
-            Main M= new Main();
-            ScheduledAppItem s= M.getSchedAppItem("fxml1/scheduledAppItem.fxml");
+            Main m= new Main();
+            ScheduledAppItem s= m.getSchedAppItem("fxml1/scheduledAppItem.fxml");
             ScheduledAppItemController schedAppItemController=s.getController();
             Pane pane=s.getPane();
 

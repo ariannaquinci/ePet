@@ -27,8 +27,8 @@ public class LoginController {
 
     @FXML
     protected void goBack() throws IOException {
-        Main H= new Main();
-        H.changeScene("fxml1/start_menu.fxml");
+        Main m= new Main();
+        m.changeScene("fxml1/start_menu.fxml");
     }
 
 
@@ -55,8 +55,8 @@ public class LoginController {
 
 
         if(SessionFacade.getSession().getCurrUserType() == UserEnum.SIMPLE_USER) {
-            Main H=new Main();
-            H.changeScene("fxml1/homepage.fxml");
+            Main m=new Main();
+            m.changeScene("fxml1/homepage.fxml");
         }
 
 

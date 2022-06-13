@@ -1,6 +1,5 @@
 package beans;
 
-import utils.Kind;
 
 public class FavoriteBean {
     private String postB;

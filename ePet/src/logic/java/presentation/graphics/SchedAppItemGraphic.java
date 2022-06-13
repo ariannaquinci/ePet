@@ -1,7 +1,22 @@
 package presentation.graphics;
 
-public interface SchedAppItemGraphic {
-    void setData(String data, String location, String usr1, String usr2, String i);
+import beans.ScheduledAppointmentBean;
+import controller.ManageAppointmentController;
+import javafx.scene.layout.Pane;
 
-    void deleteApp();
+import java.sql.SQLException;
+
+public class SchedAppItemGraphic {
+    public void deleteApp(String id, Pane item)  {
+        ScheduledAppointmentBean bean= new ScheduledAppointmentBean();
+        bean.setScheduledAppID(id);
+        try {
+            ManageAppointmentController.getInstance().deleteApp(bean);
+            item.setVisible(false);
+        }catch(SQLException s){
+
+            s.printStackTrace();
+        }
+
+    }
 }

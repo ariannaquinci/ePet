@@ -10,7 +10,7 @@ import presentation.graphics.SlotItemGraphic;
 
 import java.sql.SQLException;
 
-public class SlotItemController implements SlotItemGraphic {
+public class SlotItemController extends SlotItemGraphic {
     @FXML
     private Pane item;
 
@@ -23,19 +23,9 @@ public class SlotItemController implements SlotItemGraphic {
     @FXML
     private TextArea time;
 
-    @Override
-    public void delete() {
-        SlotAppuntamentoBean bean = new SlotAppuntamentoBean();
-        bean.setPost(post.getText());
-        bean.setAddress(place.getText());
-        bean.setDate(time.getText());
-
-        try {
-            ManageSlotsController.getInstance().deleteSlot(bean);
-        }catch(SQLException s){s.getMessage();}
-        item.setVisible(false);
+    public void delete(){
+        super.delete(post.getText(), place.getText(),time.getText(),item);
     }
-    @Override
     public void setData(String date, String address, String p){
 
         post.setText(p);

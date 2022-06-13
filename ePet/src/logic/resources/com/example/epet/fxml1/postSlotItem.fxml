@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="item" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="192.0" prefWidth="200.0" style="-fx-background-color: #8878B5;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.view.PostSlotItemController">
+   <children>
+      <TextArea fx:id="place" layoutX="9.0" layoutY="45.0" prefHeight="37.0" prefWidth="183.0" promptText="Place" />
+      <TextArea fx:id="time" layoutX="9.0" layoutY="96.0" prefHeight="37.0" prefWidth="183.0" promptText="Time" />
+      <Label fx:id="post" layoutX="9.0" layoutY="15.0" prefHeight="16.0" prefWidth="183.0" />
+      <Button layoutX="34.0" layoutY="157.0" mnemonicParsing="false" onAction="#selectSlot" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="Request appointment" />
+      <Label fx:id="impossibleRequest" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="134.0" prefHeight="17.0" prefWidth="163.0" textAlignment="CENTER" />
+   </children>
+</Pane>

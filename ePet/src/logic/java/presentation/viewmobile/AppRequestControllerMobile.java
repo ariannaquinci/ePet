@@ -25,13 +25,13 @@ public class AppRequestControllerMobile extends AppointmentRequestGraphic {
 
     public void acceptAppRequest() {
 
-            super.acceptAppRequest(account.getText(),place.getText(),date.getText());
+            super.acceptAppRequest(account.getText(),date.getText(),place.getText(),item);
             item.setVisible(false);
 
     }
 
-        public void denyAppRequest() {
-        super.denyAppRequest(post.getText(),account.getText());
+    public void denyAppRequest() {
+        super.denyAppRequest(post.getText(),account.getText(),item);
             item.setVisible(false);
 
     }

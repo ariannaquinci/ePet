@@ -28,6 +28,13 @@ public class SchedAppItemController extends SchedAppItemGraphic {
     private Pane item;
 
 
+
+
+    public void cancelApp()  {
+        super.deleteApp(id.getText(),item);
+
+    }
+
     public void setData(String data, String location , String usr1, String usr2,String i){
         date.setText(data);
         place.setText(location);
@@ -41,11 +48,6 @@ public class SchedAppItemController extends SchedAppItemGraphic {
 
 
 
-
-    }
-
-    public void deleteApp()  {
-        super.deleteApp(id.getText(),item);
 
     }
 }

@@ -25,10 +25,11 @@ public class FavoriteItemGraphic {
 
 
     protected void initResults(ObservableList<SlotAppuntamentoBean> list, FavoriteItemGraphic f) throws IOException, NoResultFoundException{
-            if(f.getClass()== FavItemController.class){
+        HBox resultsBox=((presentation.viewmobile.FavoriteItemController) f).getResultsBox();
+        resultsBox.getChildren().clear();
 
-                HBox resultsBox=((FavItemController) f).getResultsBox();
-                resultsBox.getChildren().clear();
+        if(f.getClass()== FavItemController.class){
+
 
                 for(SlotAppuntamentoBean i: list) {
                     MainComputer m= new MainComputer();
@@ -48,8 +49,6 @@ public class FavoriteItemGraphic {
 
             else if(f.getClass()== presentation.viewmobile.FavoriteItemController.class){
 
-                HBox resultsBox=((presentation.viewmobile.FavoriteItemController) f).getResultsBox();
-                resultsBox.getChildren().clear();
 
                 for(SlotAppuntamentoBean i: list) {
                     MainMobile m= new MainMobile();

@@ -34,7 +34,14 @@ public class ScheduledAppItemController extends SchedAppItemGraphic {
     @FXML
     private Label post;
 
-    public void setData(String data, String location , String usr1, String usr2,String i){
+  
+
+    public void deleteApp()  {
+       super.deleteApp(id.getText(),item);
+
+    }
+
+  public void setData(String data, String location , String usr1, String usr2,String i){
             date.setText(data);
             place.setText(location);
             id.setText(i);
@@ -47,11 +54,6 @@ public class ScheduledAppItemController extends SchedAppItemGraphic {
 
 
 
-
-    }
-
-    public void deleteApp()  {
-       super.deleteApp(id.getText(),item);
 
     }
 

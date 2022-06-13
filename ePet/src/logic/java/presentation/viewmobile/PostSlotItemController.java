@@ -9,7 +9,7 @@ import presentation.graphics.PostSlotItemGraphic;
 
 import java.sql.SQLException;
 
-public class PostSlotItemController implements PostSlotItemGraphic {
+public class PostSlotItemController extends PostSlotItemGraphic {
 
 
     @FXML
@@ -23,26 +23,16 @@ public class PostSlotItemController implements PostSlotItemGraphic {
     @FXML
     private Label impossibleRequest;
 
-    @Override
-    public void selectSlot(){
-        SlotAppuntamentoBean bean= new SlotAppuntamentoBean();
-        bean.setPost(post.getText());
-        bean.setDate(time.getText());
-        bean.setAddress(place.getText());
-        try{
-                ManageSlotsController.getInstance().occupaSlot(bean);}
-        catch(SQLException s){
-            impossibleRequest.setText(s.getMessage());
-        }
-    }
 
 
-
-    @Override
     public void setData(String date, String address, String p) {
         post.setText(p);
         place.setText(address);
         time.setText(date);
 
+    }
+
+    public void selectSlot(){
+        impossibleRequest.setText(super.selectSlot(post.getText(),time.getText(),place.getText(),null));
     }
 }

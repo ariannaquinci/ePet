@@ -1,8 +1,23 @@
 package presentation.graphics;
 
-public interface SlotItemGraphic {
+import beans.SlotAppuntamentoBean;
+import controller.ManageSlotsController;
+import javafx.scene.layout.Pane;
 
-    void delete();
+import java.sql.SQLException;
 
-    void setData(String date, String address, String p);
+public class SlotItemGraphic {
+    public void delete(String post, String place, String time, Pane item) {
+        SlotAppuntamentoBean bean = new SlotAppuntamentoBean();
+        bean.setPost(post);
+        bean.setAddress(place);
+        bean.setDate(time);
+
+        try {
+            ManageSlotsController.getInstance().deleteSlot(bean);
+            item.setVisible(false);
+        }catch(SQLException s){s.getMessage();}
+
+    }
+
 }

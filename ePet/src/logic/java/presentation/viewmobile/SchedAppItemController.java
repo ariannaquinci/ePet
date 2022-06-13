@@ -11,7 +11,7 @@ import javafx.scene.layout.Pane;
 
 import java.sql.SQLException;
 
-public class SchedAppItemController implements SchedAppItemGraphic {
+public class SchedAppItemController extends SchedAppItemGraphic {
     @FXML
     private TextArea date;
 
@@ -27,7 +27,7 @@ public class SchedAppItemController implements SchedAppItemGraphic {
     @FXML
     private Pane item;
 
-    @Override
+
     public void setData(String data, String location , String usr1, String usr2,String i){
         date.setText(data);
         place.setText(location);
@@ -44,17 +44,8 @@ public class SchedAppItemController implements SchedAppItemGraphic {
 
     }
 
-    @Override
     public void deleteApp()  {
-        ScheduledAppointmentBean bean= new ScheduledAppointmentBean();
-        bean.setScheduledAppID(id.getText());
-        try {
-            ManageAppointmentController.getInstance().deleteApp(bean);
-            item.setVisible(false);
-        }catch(SQLException s){
-
-            s.printStackTrace();
-        }
+        super.deleteApp(id.getText(),item);
 
     }
 }

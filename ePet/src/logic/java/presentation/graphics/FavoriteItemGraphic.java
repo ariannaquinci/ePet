@@ -84,17 +84,19 @@ public class FavoriteItemGraphic {
     }
 
     protected boolean removeFromFavorites(String idPost){
+        Boolean retvalue=false;
         FavoriteBean bean = new FavoriteBean();
         bean.setPostB(idPost);
         bean.setUserB(SessionFacade.getSession().getID());
         try {
             ManageFavoritesController.getInstance().removeFromFavorites(bean);
-            return true;
+            retvalue=true;
         }catch(SQLException s){
             s.getMessage();
-            return false;
+
         }
+        return retvalue;
     }
 
-    protected void setData(String title, String desc, String cr, String id){}
+
 }

@@ -12,24 +12,27 @@ import javafx.scene.layout.Pane;
 import java.sql.SQLException;
 
 public class AppRequestController extends AppointmentRequestGraphic {
+
+
+
     @FXML
-    protected TextArea date;
+    protected Pane item;
 
     @FXML
     protected TextArea place;
 
     @FXML
     protected TextArea account;
-
-    @FXML
-    protected Pane item;
     @FXML
     protected Label post;
 
+    @FXML
+    protected TextArea date;
 
 
 
-   public void acceptAppRequest(){
+
+    public void acceptAppRequest(){
 
                 super.acceptAppRequest(account.getText(),date.getText(),place.getText());
                 item.setVisible(false);

@@ -67,7 +67,7 @@ public class FavItemController extends FavoriteItemGraphic {
 
     }
 
-   
+
     public void setData(String title, String desc, String cr, String id){
 
         titleLabel.setText(title);

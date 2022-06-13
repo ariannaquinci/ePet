@@ -1,0 +1,54 @@
+DAO->dao ok
+Factories->factories ok
+AdoptionController, presentation.viewmobile.WriteController,presentation.viewmobile.ResearchController e PutInAdoptionController:
+  if(!dog.isSelected()&&!cat.isSelected()&&!bunny.isSelected()&&!hamster.isSelected()&&!other.isSelected()
+ if(kind.getText().equals("dog")){return DOG;}
+
+         else if(kind.getText().equals("cat")){return CAT;}
+
+         else if(kind.getText().equals("bunny")){return BUNNY;}
+
+         else if(kind.getText().equals("hamster")){return HAMSTER;}
+
+         else if(kind.getText().equals("other")){return OTHER;}
+         else {
+
+             return null;}
+AppReqController:
+Date-> date
+Place->place        ok
+
+RegisterController:
+ErrorMsg->errorMsg
+
+Register2Controller:
+BD->bd
+
+PostItemController:
+City->city
+Country->country
+Region->region      ok
+
+ProfileController:
+Birthday->birthday
+SecName->lastName
+Name->name
+
+PutInAdoptionController:
+ City->city
+ Country->country
+ Region->region
+
+VIEW2:
+AppRequestController
+Date,Place->date,place
+HomepageController:
+Birthday->birthday
+
+SchedAppItemController:
+Date,Place->date,place
+
+WriteController:
+City,Country,Region->city,country,region
+
+Deleted ManageUserController

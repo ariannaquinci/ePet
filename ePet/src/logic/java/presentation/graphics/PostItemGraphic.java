@@ -101,16 +101,17 @@ public class PostItemGraphic {
 
     protected boolean deletePost(String id){
 
+        Boolean retval=false;
         PostBean bean = new PostBean();
         bean.setId(id);
         bean.setCreator(SessionFacade.getSession().getID());
         try{
             ManagePostController.getInstance().deletePost(bean);
-            return true;
+            retval=true;
         }
         catch(SQLException s){s.getMessage();
         }
-        return false;
+        return retval;
 
     }
 

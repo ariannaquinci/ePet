@@ -50,10 +50,7 @@ public class FavItemController extends FavoriteItemGraphic {
 
 
 
-   public void showSlots() throws IOException {
-       noSlots.setText(super.showSlots(idPost.getText(),this));
 
-   }
 
 
     public void removeFromFavorites()  {
@@ -65,8 +62,12 @@ public class FavItemController extends FavoriteItemGraphic {
 
 
     }
+    public void showSlots() throws IOException {
+        noSlots.setText(super.showSlots(idPost.getText(),this));
 
-    @Override
+    }
+
+   
     public void setData(String title, String desc, String cr, String id){
 
         titleLabel.setText(title);

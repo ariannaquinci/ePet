@@ -13,34 +13,38 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class WriteController extends PutInAdoptionGraphic {
+
+    @FXML
+    private CheckMenuItem dog;
     @FXML
     private TextField city;
-
-    @FXML
-    private TextField country;
-
-    @FXML
-    private TextField region;
-
-
-    @FXML
-    private CheckMenuItem bunny;
 
     @FXML
     private CheckMenuItem cat;
 
     @FXML
+    private TextField country;
+    @FXML
+    private CheckMenuItem bunny;
+
+
+    @FXML
+    private TextField region;
+
+
+
+
+    @FXML
     private TextArea description;
 
     @FXML
-    private CheckMenuItem dog;
+    private MenuButton kind;
 
     @FXML
     private CheckMenuItem hamster;
 
 
-    @FXML
-    private MenuButton kind;
+
 
     @FXML
     private CheckMenuItem other;

@@ -51,7 +51,6 @@ public class FavoriteItemController extends FavoriteItemGraphic {
 
     }
 
-    @Override
 
     public void setData(String title, String desc, String cr, String id){
 

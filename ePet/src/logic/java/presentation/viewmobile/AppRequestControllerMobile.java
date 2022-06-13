@@ -9,17 +9,19 @@ import javafx.scene.layout.Pane;
 
 
 public class AppRequestControllerMobile extends AppointmentRequestGraphic {
-    @FXML
-    private TextArea date;
+
 
     @FXML
     private TextArea place;
 
     @FXML
-    private TextArea account;
+    private TextArea date;
+
 
     @FXML
     private Pane item;
+    @FXML
+    private TextArea account;
     @FXML
     private Label post;
 

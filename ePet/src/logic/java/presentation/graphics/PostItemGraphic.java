@@ -61,10 +61,10 @@ public class PostItemGraphic {
 
 
     protected void initResults(ObservableList<SlotAppuntamentoBean> list,PostItemGraphic p) throws IOException, NoResultFoundException {
-        HBox resultsBox=((PostItemController)p).getResultsBox();
-        resultsBox.getChildren().clear();
-        if(p.getClass()==presentation.view.PostItemController.class){
 
+        if(p.getClass()==presentation.view.PostItemController.class){
+            HBox resultsBox=((presentation.view.PostItemController)p).getResultsBox();
+            resultsBox.getChildren().clear();
 
 
             for(SlotAppuntamentoBean i: list) {
@@ -82,6 +82,9 @@ public class PostItemGraphic {
             }
         }
         else if(p.getClass()==presentation.viewmobile.PostItemController.class){
+
+            HBox resultsBox=((presentation.viewmobile.PostItemController)p).getResultsBox();
+            resultsBox.getChildren().clear();
 
             for(SlotAppuntamentoBean i: list){
                 MainMobile m= new MainMobile();

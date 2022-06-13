@@ -10,43 +10,38 @@ import presentation.graphics.PostSlotItemGraphic;
 
 import java.sql.SQLException;
 
-public class PostSlotController implements PostSlotItemGraphic {
+public class PostSlotController extends PostSlotItemGraphic {
     @FXML
     private Pane item;
     @FXML
     private Label post;
     @FXML
+    private TextArea place;
+    @FXML
     private Label impossibleRequest;
 
 
-    @FXML
-    private TextArea place;
+
 
     @FXML
     private TextArea time;
 
 
-    @Override
+
+
+    public void selectSlot(){
+
+            impossibleRequest.setText( super.selectSlot(post.getText(),time.getText(),place.getText(), item));
+
+
+
+
+    }
+
     public void setData(String date, String address, String p) {
         post.setText(p);
         place.setText(address);
         time.setText(date);
-
-    }
-
-    @Override
-    public void selectSlot(){
-        SlotAppuntamentoBean bean= new SlotAppuntamentoBean();
-        bean.setPost(post.getText());
-        bean.setDate(time.getText());
-        bean.setAddress(place.getText());
-        try{
-            ManageSlotsController.getInstance().occupaSlot(bean);
-
-            item.setVisible(false);
-        }catch(SQLException s){
-            impossibleRequest.setText(s.getMessage());
-        }
 
     }
 }

@@ -20,7 +20,7 @@ import presentation.view.utilities.SelectPet;
 
 import java.io.IOException;
 
-public class AdoptionController  implements AdoptionGraphic{
+public class AdoptionController  extends AdoptionGraphic{
     @FXML
     private MenuButton kind;
 
@@ -45,12 +45,12 @@ public class AdoptionController  implements AdoptionGraphic{
     private Label noResults;
     @FXML
     private VBox resultsBox;
-    @Override
+
     public void setKind(){
         SelectPet.setCheckedMenuItem(kind,dog,cat,bunny,hamster,other);
     }
 
-    @Override
+
     public void goHome() throws IOException {
         MainComputer m=new MainComputer();
         m.changeScene("fxml1/homepage.fxml");
@@ -58,49 +58,17 @@ public class AdoptionController  implements AdoptionGraphic{
 
 
 
-    @Override
-    public void initResults(ObservableList<PostBean> list) throws IOException {
-        noResults.setText("");
-        resultsBox.getChildren().clear();
-
-        for(PostBean i: list) {
-            MainComputer m= new MainComputer();
-            PetItem p= m.getItem("fxml1/petItem.fxml");
-            PetItemController petItemController=p.getController();
-            Pane pane=p.getPane();
 
 
-            petItemController.setData( i.getTitle(), i.getDescription(),i.getCreator(),i.getId());
-            resultsBox.getChildren().add(pane);
-            resultsBox.setMargin(pane,new Insets(10,10,10,10));
 
-
-        }
-
-    }
-
-    @Override
     public void search() throws IOException{
+        noResults.setText(super.search(this, kind.getText(),country.getText(),city.getText(),region.getText()));
 
-        PostBean bean=new PostBean();
-
-        bean.setKindOfPet(SelectPet.selectKind(kind.getText()));
-
-        bean.setCountry(country.getText());
-        bean.setCity(city.getText());
-        bean.setRegion(region.getText());
-
-        try {
-
-            initResults(ResearchController.getInstance().research(bean));
-
-        }catch(NoResultFoundException e){
-            resultsBox.getChildren().clear();
-            noResults.setText(e.getMessage());
-
-        }
 
     }
 
 
+    public VBox getResultsBox() {
+        return this.resultsBox;
+    }
 }

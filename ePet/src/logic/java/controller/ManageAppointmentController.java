@@ -91,7 +91,7 @@ public class ManageAppointmentController {
 
 
         } catch (SQLException e) {
-            throw new NoResultFoundException();
+            throw new NoResultFoundException("No appointments to show");
         }
     }
 

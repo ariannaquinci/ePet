@@ -1,7 +1,7 @@
 package entities;
 
 import exceptions.DuplicatedUserException;
-import model.dao.UserDAO;
+import persistence.dao.UserDAO;
 import utils.UserEnum;
 
 import java.sql.SQLException;

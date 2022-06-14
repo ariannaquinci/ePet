@@ -1,7 +1,7 @@
 package entities;
 
 import exceptions.NoResultFoundException;
-import model.dao.PostDAO;
+import persistence.dao.PostDAO;
 import utils.Kind;
 
 import java.io.File;

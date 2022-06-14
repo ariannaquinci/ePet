@@ -1,7 +1,7 @@
 package entities;
 
 import exceptions.NoResultFoundException;
-import model.dao.SlotAppuntamentoDAO;
+import persistence.dao.SlotAppuntamentoDAO;
 
 import java.sql.SQLException;
 import java.util.List;

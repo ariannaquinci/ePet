@@ -1,11 +1,9 @@
 package entities;
 
 import exceptions.NoResultFoundException;
-import model.dao.ProfileDAO;
+import persistence.dao.ProfileDAO;
 
-import java.io.File;
 import java.sql.SQLException;
-import java.time.LocalDate;
 import java.util.List;
 
 public class Profile {

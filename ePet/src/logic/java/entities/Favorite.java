@@ -1,7 +1,7 @@
 package entities;
 
 import exceptions.NoResultFoundException;
-import model.dao.FavoriteDAO;
+import persistence.dao.FavoriteDAO;
 import utils.Kind;
 import java.sql.SQLException;
 import java.util.List;

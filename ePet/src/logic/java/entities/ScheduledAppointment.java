@@ -1,7 +1,7 @@
 package entities;
 
 import exceptions.NoResultFoundException;
-import model.dao.ScheduledAppointmentDAO;
+import persistence.dao.ScheduledAppointmentDAO;
 
 
 import java.sql.SQLException;

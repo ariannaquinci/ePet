@@ -1,6 +1,6 @@
 package entities;
 
-import model.dao.AppointmentDAO;
+import persistence.dao.AppointmentDAO;
 
 import java.sql.SQLException;
 import java.time.LocalDate;

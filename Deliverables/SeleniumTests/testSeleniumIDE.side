@@ -1,0 +1,64 @@
+{
+  "id": "bd655635-ebfb-4622-a2b3-a49b9bc5da17",
+  "version": "2.0",
+  "name": "testSeleniumIDE",
+  "url": "https://www.bing.com",
+  "tests": [{
+    "id": "e375aac5-7c3e-44d2-a507-d1bc12c547bc",
+    "name": "Pasolini",
+    "commands": [{
+      "id": "e1522035-6f7c-4ada-a164-1586e2aef32a",
+      "comment": "",
+      "command": "open",
+      "target": "/search?q=Pasolini&pc=COS2&ptag=D031921-N0640AF75BAE01A83A43AB87F&form=CONBDF&conlogo=CT3331983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4148540c-1857-45af-b6de-4c851827b2a7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1006x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c15b70c-2849-403c-b346-067f93d1ceec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pier Paolo Pasolini - Wikipedia",
+      "targets": [
+        ["linkText=Pier Paolo Pasolini - Wikipedia", "linkText"],
+        ["css=.b_LinksColorMD", "css:finder"],
+        ["xpath=//a[contains(text(),'Pier Paolo Pasolini - Wikipedia')]", "xpath:link"],
+        ["xpath=//ol[@id='b_results']/li[2]/div[4]/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://it.wikipedia.org/wiki/Pier_Paolo_Pasolini')]", "xpath:href"],
+        ["xpath=//div[4]/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pier Paolo Pasolini - Wikipedia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b65b629d-a696-40f4-8173-fa029b2a88cc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Pier Paolo Pasolini')]", "xpath:innerText"]
+      ],
+      "value": "Pier Paolo Pasolini"
+    }]
+  }],
+  "suites": [{
+    "id": "c9d2e8bd-5244-428b-b42b-83da1cd278ce",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e375aac5-7c3e-44d2-a507-d1bc12c547bc"]
+  }],
+  "urls": ["https://www.bing.com/"],
+  "plugins": []
+}

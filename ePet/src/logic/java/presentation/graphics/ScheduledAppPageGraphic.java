@@ -69,6 +69,7 @@ public class ScheduledAppPageGraphic {
 
 
         }catch(NoResultFoundException n){
+
             noResults=n.getMessage();
         }
         return noResults;

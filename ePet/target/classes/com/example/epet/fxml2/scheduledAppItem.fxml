@@ -13,7 +13,7 @@
             <Font size="12.0" />
          </font>
       </TextArea>
-      <Button layoutX="233.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteApp" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="X" />
+      <Button layoutX="233.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancelApp" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="X" />
       <TextArea fx:id="date" editable="false" layoutX="62.0" layoutY="81.0" prefHeight="36.0" prefWidth="147.0" style="-fx-background-color: #000000;">
          <font>
             <Font size="12.0" />

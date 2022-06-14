@@ -75,7 +75,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Mobile">
+  <component name="RunManager" selected="JUnit.TestUserBean">
     <configuration name="Computer" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -236,6 +236,7 @@
       <workItem from="1655147565042" duration="26000" />
       <workItem from="1655147859533" duration="42000" />
       <workItem from="1655193404191" duration="3980000" />
+      <workItem from="1655197926963" duration="36000" />
     </task>
     <servers />
   </component>

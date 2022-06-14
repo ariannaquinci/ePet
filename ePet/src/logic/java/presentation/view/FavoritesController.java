@@ -16,15 +16,14 @@ import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 
-public class FavoritesController implements FavoritesPageGraphic {
+public class FavoritesController extends FavoritesPageGraphic {
 
     @FXML
     private Label noResults;
     @FXML
     private VBox resultsBox;
 
-
-    @Override
+    public VBox getResultsBox(){return this.resultsBox;}
 
     public void initResults(ObservableList<FavoriteBean> list) throws IOException, NoResultFoundException {
 
@@ -46,22 +45,13 @@ public class FavoritesController implements FavoritesPageGraphic {
 
     }
 
-
-    @Override
     public void goBack() throws IOException {
         MainComputer m=new MainComputer();
         m.changeScene("fxml1/homepage.fxml");
     }
-   @Override
-   public void showFavorites() throws IOException{
-       FavoriteBean bean= new FavoriteBean();
-       bean.setUserB(SessionFacade.getSession().getID());
-       try{
-           initResults(ManageFavoritesController.getInstance().showFavorites(bean));
-       }catch(NoResultFoundException n){
 
-           noResults.setText(n.getMessage());
-       }
+    public void showFavorites() throws IOException {
+        noResults.setText(super.showFavorites(this));
     }
 
 

@@ -63,7 +63,7 @@ public class RegisterController {
                  MainComputer m= new MainComputer();
                   m.changeScene("fxml1/register2.fxml");
             }catch(SQLException s){
-                      errorMsg.setText(s.getMessage());
+                      errorMsg.setText("user already existent, please login");
             }
         } catch (SQLException e) {
             errorMsg.setText(e.getMessage());

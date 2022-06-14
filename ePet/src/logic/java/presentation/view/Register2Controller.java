@@ -62,7 +62,7 @@ public class Register2Controller {
             MainComputer m= new MainComputer();
             m.changeScene("fxml1/homepage.fxml");
         }catch(SQLException s){
-            errorMsg.setText(s.getMessage());
+            errorMsg.setText("fill correctly every field");
 
         }
 

@@ -80,8 +80,6 @@ public class ResearchController extends AdoptionGraphic {
 
     }
 
-    public void initResults(ObservableList<PostBean> list) throws IOException {
-
-    }
+  
 
 }

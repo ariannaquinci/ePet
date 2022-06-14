@@ -15,7 +15,7 @@ import presentation.view.utilities.SelectPet;
 
 import java.io.IOException;
 
-public class ResearchController implements AdoptionGraphic {
+public class ResearchController extends AdoptionGraphic {
     @FXML
     private CheckMenuItem bunny;
 
@@ -51,12 +51,15 @@ public class ResearchController implements AdoptionGraphic {
 
     @FXML
     private Button search;
-    @Override
 
     public void setKind(){
         SelectPet.setCheckedMenuItem(kind,dog,cat,bunny,hamster,other);
     }
-    @Override
+
+    public VBox getResultsBox() {
+        return this.resultsBox;
+    }
+
     public void goHome() throws IOException {
         MainMobile m=new MainMobile();
         m.changeScene("fxml2/HomepageMobile.fxml");
@@ -71,48 +74,13 @@ public class ResearchController implements AdoptionGraphic {
 
 
 
-    @Override
+
     public void search() throws IOException{
-
-        PostBean bean=new PostBean();
-
-        bean.setKindOfPet(SelectPet.selectKind(kind.getText()));
-
-        bean.setCountry(country.getText());
-        bean.setCity(city.getText());
-        bean.setRegion(region.getText());
-
-        try {
-
-            initResults(controller.ResearchController.getInstance().research(bean));
-
-        }catch(NoResultFoundException e){
-            resultsBox.getChildren().clear();
-            noResults.setText(e.getMessage());
-
-        }
+            noResults.setText(super.search(this, kind.getText(),country.getText(),city.getText(),region.getText()));
 
     }
-    @Override
+
     public void initResults(ObservableList<PostBean> list) throws IOException {
-        noResults.setText("");
-        resultsBox.getChildren().clear();
-
-        for(PostBean i: list) {
-            MainMobile m= new MainMobile();
-            PetItem p= m.getItem("fxml2/petItem.fxml");
-            PetItemController itemController=p.getController2();
-            Pane pane=p.getPane();
-
-
-
-
-            itemController.setData( i.getTitle(), i.getDescription(),i.getCreator(),i.getId());
-            resultsBox.getChildren().add(pane);
-            resultsBox.setMargin(pane,new Insets(10,10,10,10));
-
-
-        }
 
     }
 

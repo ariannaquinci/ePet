@@ -75,7 +75,7 @@
       <recent name="com.example.epet" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Computer">
+  <component name="RunManager" selected="Application.Mobile">
     <configuration name="Computer" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -240,6 +240,7 @@
       <workItem from="1655207716478" duration="7077000" />
       <workItem from="1655229707380" duration="2333000" />
       <workItem from="1655284162593" duration="389000" />
+      <workItem from="1655288708694" duration="199000" />
     </task>
     <servers />
   </component>

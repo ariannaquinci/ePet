@@ -7,7 +7,7 @@ import javafx.scene.layout.Pane;
 import java.sql.SQLException;
 
 public class SchedAppItemGraphic {
-    public void deleteApp(String id, Pane item)  {
+    protected final void deleteApp(String id, Pane item)  {
         ScheduledAppointmentBean bean= new ScheduledAppointmentBean();
         bean.setScheduledAppID(id);
         try {

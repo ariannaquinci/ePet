@@ -29,7 +29,7 @@ public class AdoptionGraphic {
 
 
 
-    public void initResults(ObservableList<PostBean> list,AdoptionGraphic a) throws IOException {
+    private void initResults(ObservableList<PostBean> list,AdoptionGraphic a) throws IOException {
 
         if (a.getClass() == AdoptionController.class) {
             VBox resultsBox = ((AdoptionController) a).getResultsBox();
@@ -73,7 +73,7 @@ public class AdoptionGraphic {
 
 
 
-    public String search(AdoptionGraphic a,String kind, String country, String city, String region) throws IOException{
+    protected final String search(AdoptionGraphic a,String kind, String country, String city, String region) throws IOException{
 
         String noResults="";
         PostBean bean=new PostBean();

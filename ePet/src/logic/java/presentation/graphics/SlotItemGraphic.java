@@ -7,7 +7,7 @@ import javafx.scene.layout.Pane;
 import java.sql.SQLException;
 
 public class SlotItemGraphic {
-    public void delete(String post, String place, String time, Pane item) {
+    protected final void delete(String post, String place, String time, Pane item) {
         SlotAppuntamentoBean bean = new SlotAppuntamentoBean();
         bean.setPost(post);
         bean.setAddress(place);

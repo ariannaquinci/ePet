@@ -12,11 +12,11 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class LoginGraphic {
-    protected void goBack(String fxml) throws IOException{
+    protected final void goBack(String fxml) throws IOException{
         Main m= new Main();
         m.changeScene(fxml);
     }
-    protected String checkLogin(String un,String pw) throws IOException{
+    protected final String checkLogin(String un,String pw) throws IOException{
         String wrongAccess="";
         try {
             UserBean credentials = new UserBean();

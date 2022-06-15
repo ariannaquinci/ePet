@@ -19,7 +19,7 @@ import java.io.IOException;
 
 public class FavoritesPageGraphic {
 
-    protected String showFavorites(FavoritesPageGraphic f) throws IOException{
+    protected final String showFavorites(FavoritesPageGraphic f) throws IOException{
         String noResults="";
         FavoriteBean bean= new FavoriteBean();
         bean.setUserB(SessionFacade.getSession().getID());
@@ -32,7 +32,7 @@ public class FavoritesPageGraphic {
         return noResults;
     }
 
-    public void initResults(ObservableList<FavoriteBean> list, FavoritesPageGraphic f) throws IOException, NoResultFoundException {
+    private void initResults(ObservableList<FavoriteBean> list, FavoritesPageGraphic f) throws IOException, NoResultFoundException {
        if(f.getClass()==FavoritesController.class) {
            VBox resultsBox = ((FavoritesController) f).getResultsBox();
            resultsBox.getChildren().clear();

@@ -19,7 +19,7 @@ import utils.ScheduledAppItem;
 import java.io.IOException;
 
 public class ScheduledAppPageGraphic {
-    protected void initResults(ObservableList<ScheduledAppointmentBean> list, ScheduledAppPageGraphic sc) throws IOException, NoResultFoundException {
+    private void initResults(ObservableList<ScheduledAppointmentBean> list, ScheduledAppPageGraphic sc) throws IOException, NoResultFoundException {
 
 
 
@@ -60,7 +60,7 @@ public class ScheduledAppPageGraphic {
     }
 
 
-    protected String showScheduledApps(ScheduledAppPageGraphic s) throws IOException{
+    protected final String showScheduledApps(ScheduledAppPageGraphic s) throws IOException{
         String noResults="";
         ScheduledAppointmentBean bean= new ScheduledAppointmentBean();
         bean.setUser1(SessionFacade.getSession().getID());

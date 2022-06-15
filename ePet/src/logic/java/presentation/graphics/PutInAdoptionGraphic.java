@@ -15,7 +15,7 @@ import java.sql.SQLException;
 
 public class PutInAdoptionGraphic {
 
-    public String  post(String city, String country, String region, String description, String title, Kind kind,PutInAdoptionGraphic adopt) throws IOException {
+    protected final String  post(String city, String country, String region, String description, String title, Kind kind,PutInAdoptionGraphic adopt) throws IOException {
         String errorMsg="";
         PostBean postBean = new PostBean();
         postBean.setCity(city);

@@ -24,7 +24,7 @@ public class FavoriteItemGraphic {
 
 
 
-    protected void initResults(ObservableList<SlotAppuntamentoBean> list, FavoriteItemGraphic f) throws IOException, NoResultFoundException{
+    private void initResults(ObservableList<SlotAppuntamentoBean> list, FavoriteItemGraphic f) throws IOException, NoResultFoundException{
 
 
         if(f.getClass()== FavItemController.class){
@@ -70,7 +70,7 @@ public class FavoriteItemGraphic {
 
     }
 
-    protected String showSlots(String idPost,FavoriteItemGraphic f) throws IOException{
+    protected final String showSlots(String idPost,FavoriteItemGraphic f) throws IOException{
         String noSlots="";
         SlotAppuntamentoBean bean= new SlotAppuntamentoBean();
         bean.setPost(idPost);
@@ -85,7 +85,7 @@ public class FavoriteItemGraphic {
         return noSlots;
     }
 
-    protected boolean removeFromFavorites(String idPost){
+    protected final boolean removeFromFavorites(String idPost){
         Boolean retvalue=false;
         FavoriteBean bean = new FavoriteBean();
         bean.setPostB(idPost);

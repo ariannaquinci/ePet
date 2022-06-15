@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class PostSlotItemGraphic {
 
-    public String selectSlot(String post, String time, String place, Pane item){
+    protected final String selectSlot(String post, String time, String place, Pane item){
         String err="";
         SlotAppuntamentoBean bean= new SlotAppuntamentoBean();
         bean.setPost(post);

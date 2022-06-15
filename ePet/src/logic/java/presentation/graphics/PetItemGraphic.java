@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class PetItemGraphic {
-    protected void addToFavorites(String idPost){
+    protected final void addToFavorites(String idPost){
         FavoriteBean bean= new FavoriteBean();
         bean.setUserB(SessionFacade.getSession().getID());
         bean.setPostB(idPost);
@@ -31,7 +31,7 @@ public class PetItemGraphic {
         }
 
     }
-    protected String  showSlots(String idPost, PetItemGraphic p) throws IOException{
+    protected final String  showSlots(String idPost, PetItemGraphic p) throws IOException{
         SlotAppuntamentoBean bean= new SlotAppuntamentoBean();
         String noSlots="";
         bean.setPost(idPost);
@@ -46,7 +46,7 @@ public class PetItemGraphic {
 
     }
 
-    public void initResults(ObservableList<SlotAppuntamentoBean> list,PetItemGraphic pet) throws IOException, NoResultFoundException {
+    private void initResults(ObservableList<SlotAppuntamentoBean> list,PetItemGraphic pet) throws IOException, NoResultFoundException {
 
         if(pet.getClass()== PetItemController.class){
             HBox resultsBox= ((PetItemController)pet).getResultsBox();

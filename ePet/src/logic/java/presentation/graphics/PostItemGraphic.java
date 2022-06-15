@@ -24,7 +24,7 @@ public class PostItemGraphic {
 
 
 
-    protected String addSlot(String id,String address, String time) {
+    protected  final String addSlot(String id,String address, String time) {
         String errorMsg="";
         SlotAppuntamentoBean slotBean = new SlotAppuntamentoBean();
         slotBean.setPost(id);
@@ -42,7 +42,7 @@ public class PostItemGraphic {
 
 
 
-    protected String showSlots(String id, PostItemGraphic p) throws IOException{
+    protected final  String showSlots(String id, PostItemGraphic p) throws IOException{
         String noResults="";
         SlotAppuntamentoBean bean= new SlotAppuntamentoBean();
         bean.setPost(id);
@@ -60,7 +60,7 @@ public class PostItemGraphic {
 
 
 
-    protected void initResults(ObservableList<SlotAppuntamentoBean> list,PostItemGraphic p) throws IOException, NoResultFoundException {
+    private void initResults(ObservableList<SlotAppuntamentoBean> list,PostItemGraphic p) throws IOException, NoResultFoundException {
 
         if(p.getClass()==presentation.view.PostItemController.class){
             HBox resultsBox=((presentation.view.PostItemController)p).getResultsBox();
@@ -102,7 +102,7 @@ public class PostItemGraphic {
     }
 
 
-    protected boolean deletePost(String id){
+    protected final boolean deletePost(String id){
 
         Boolean retval=false;
         PostBean bean = new PostBean();

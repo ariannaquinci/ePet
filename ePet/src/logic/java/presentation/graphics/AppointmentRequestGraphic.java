@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 public class AppointmentRequestGraphic {
 
-   protected void acceptAppRequest(String account, String date, String place, Pane item){
+   protected final void acceptAppRequest(String account, String date, String place, Pane item){
        AppointmentRequestBean bean= new AppointmentRequestBean();
        bean.setApplicant(account);
        bean.setDate(date);
@@ -24,7 +24,7 @@ public class AppointmentRequestGraphic {
            e.getMessage();
        }
    }
-    protected void denyAppRequest(String post, String account,Pane item) {
+    protected final void denyAppRequest(String post, String account,Pane item) {
         AppointmentRequestBean bean= new AppointmentRequestBean();
         bean.setPost(post);
         bean.setApplicant(account);

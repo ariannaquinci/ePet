@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="item" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="801.0" style="-fx-background-color: #8878B5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.view.FavItemController">
+   <children>
+      <Label fx:id="idPost" alignment="CENTER_RIGHT" layoutX="274.0" layoutY="239.0" prefHeight="34.0" prefWidth="326.0">
+         <font>
+            <Font name="System" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="17.0" layoutY="243.0" mnemonicParsing="false" onAction="#showSlots" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="Show available appointment's slots" />
+      <TextArea fx:id="description" layoutX="17.0" layoutY="109.0" prefHeight="124.0" prefWidth="755.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font name="System" size="20.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="titleLabel" layoutX="17.0" layoutY="56.0" prefHeight="34.0" prefWidth="371.0" textFill="WHITE">
+         <font>
+            <Font name="System" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="creator" layoutX="21.0" layoutY="17.0" prefHeight="29.0" prefWidth="243.0">
+         <font>
+            <Font name="System" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="765.0" layoutY="4.0" mnemonicParsing="false" onAction="#removeFromFavorites" style="-fx-background-color: #f2c0e6; -fx-border-color: #000000;" text="X" />
+      <ScrollPane layoutX="20.0" layoutY="314.0" prefHeight="164.0" prefWidth="755.0">
+         <content>
+            <HBox fx:id="resultsBox" prefHeight="164.0" prefWidth="769.0" style="-fx-background-color: #f2c0e6;" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="noSlots" layoutX="17.0" layoutY="273.0" prefHeight="29.0" prefWidth="185.0" textFill="#d0232b">
+         <font>
+            <Font name="System" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b14e152f-d28a-4923-8c00-9c0f3d2a46be" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Enum" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="20XY0XNglgH4E0LnUoI7HGLKBvt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/ePet" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Service.Factories" />
+      <recent name="Service/Factories" />
+      <recent name="VIEW2" />
+      <recent name="VIEW" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Progetto_finale\ePet.git\trunk\ePet\src\logic\resources" />
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/logic/resources/com/example/epet/fxml1" />
+      <recent name="$PROJECT_DIR$/database" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arian\OneDrive\Desktop\ePet12062213func\ePet\src\logic\resources\com\example\epet" />
+      <recent name="C:\Users\arian\OneDrive\Desktop\ePet12062213func\ePet\src" />
+      <recent name="$PROJECT_DIR$/src/logic/resources/com/example/epet" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="VIEW2" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="utils" />
+      <recent name="com.example.epet" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Computer">
+    <configuration name="Computer" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.example.epet.MainComputer" />
+      <module name="ePet" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mobile" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.epet.MainMobile" />
+      <module name="ePet" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUser" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="ePet" />
+      <option name="PACKAGE_NAME" value="com.example.epet" />
+      <option name="MAIN_CLASS_NAME" value="com.example.epet.TestUser" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUserBean" type="JUnit" factoryName="JUnit">
+      <module name="ePet" />
+      <option name="PACKAGE_NAME" value="com.example.epet" />
+      <option name="MAIN_CLASS_NAME" value="com.example.epet.TestUserBean" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ePet" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Mobile" />
+      <item itemvalue="Application.Computer" />
+      <item itemvalue="JUnit.TestUser" />
+      <item itemvalue="JUnit.TestUserBean" />
+      <item itemvalue="Maven.ePet" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b14e152f-d28a-4923-8c00-9c0f3d2a46be" name="Changes" comment="" />
+      <created>1636192180101</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636192180101</updated>
+      <workItem from="1636192181581" duration="1094000" />
+      <workItem from="1636193589593" duration="6555000" />
+      <workItem from="1636274327581" duration="197000" />
+      <workItem from="1636274549138" duration="2164000" />
+      <workItem from="1636276780027" duration="143000" />
+      <workItem from="1636277037662" duration="2299000" />
+      <workItem from="1636279407737" duration="2930000" />
+      <workItem from="1636458064903" duration="494000" />
+      <workItem from="1636637847387" duration="130000" />
+      <workItem from="1636646963874" duration="2338000" />
+      <workItem from="1637149528333" duration="117000" />
+      <workItem from="1637243544332" duration="51000" />
+      <workItem from="1637406856539" duration="1745000" />
+      <workItem from="1637482106319" duration="2811000" />
+      <workItem from="1637484972045" duration="653000" />
+      <workItem from="1637485655745" duration="2623000" />
+      <workItem from="1637494260024" duration="932000" />
+      <workItem from="1637495220098" duration="182000" />
+      <workItem from="1637495426189" duration="1813000" />
+      <workItem from="1637505703035" duration="1527000" />
+      <workItem from="1637507265659" duration="263000" />
+      <workItem from="1637507699470" duration="1016000" />
+      <workItem from="1637570684721" duration="81000" />
+      <workItem from="1637592488565" duration="666000" />
+      <workItem from="1637596082909" duration="538000" />
+      <workItem from="1637596723752" duration="237000" />
+      <workItem from="1637596981866" duration="1804000" />
+      <workItem from="1637659617742" duration="114000" />
+      <workItem from="1637741010301" duration="28000" />
+      <workItem from="1637755434456" duration="240000" />
+      <workItem from="1637829860121" duration="2040000" />
+      <workItem from="1637832132375" duration="2815000" />
+      <workItem from="1637848874941" duration="3124000" />
+      <workItem from="1637852027534" duration="25000" />
+      <workItem from="1637853488776" duration="19000" />
+      <workItem from="1638006552386" duration="4954000" />
+      <workItem from="1638101750085" duration="28000" />
+      <workItem from="1638374855657" duration="3722000" />
+      <workItem from="1638456511691" duration="4069000" />
+      <workItem from="1638633038356" duration="4579000" />
+      <workItem from="1638695728563" duration="35000" />
+      <workItem from="1638695995083" duration="609000" />
+      <workItem from="1639066558693" duration="708000" />
+      <workItem from="1639212208572" duration="9984000" />
+      <workItem from="1639302196336" duration="245000" />
+      <workItem from="1639302473886" duration="11216000" />
+      <workItem from="1640852852717" duration="215000" />
+      <workItem from="1641203987294" duration="1674000" />
+      <workItem from="1641232949499" duration="2605000" />
+      <workItem from="1646040191132" duration="728000" />
+      <workItem from="1646730308991" duration="1350000" />
+      <workItem from="1646896110288" duration="873000" />
+      <workItem from="1654891439181" duration="3178000" />
+      <workItem from="1654936018440" duration="596000" />
+      <workItem from="1654937377520" duration="4423000" />
+      <workItem from="1654947571862" duration="926000" />
+      <workItem from="1654949057948" duration="46000" />
+      <workItem from="1654949354998" duration="181000" />
+      <workItem from="1654952775048" duration="155000" />
+      <workItem from="1654953881817" duration="63000" />
+      <workItem from="1654953998995" duration="23000" />
+      <workItem from="1654955273187" duration="952000" />
+      <workItem from="1654956333440" duration="145000" />
+      <workItem from="1654956555284" duration="2172000" />
+      <workItem from="1654959308817" duration="63000" />
+      <workItem from="1655018752999" duration="185000" />
+      <workItem from="1655032103033" duration="191000" />
+      <workItem from="1655032685159" duration="7046000" />
+      <workItem from="1655041979810" duration="4357000" />
+      <workItem from="1655046390098" duration="3011000" />
+      <workItem from="1655049672757" duration="1297000" />
+      <workItem from="1655051496698" duration="297000" />
+      <workItem from="1655107245721" duration="987000" />
+      <workItem from="1655108415675" duration="2383000" />
+      <workItem from="1655113988274" duration="4709000" />
+      <workItem from="1655119538689" duration="283000" />
+      <workItem from="1655120514196" duration="3350000" />
+      <workItem from="1655127028439" duration="12173000" />
+      <workItem from="1655139760752" duration="302000" />
+      <workItem from="1655140464175" duration="1135000" />
+      <workItem from="1655142615750" duration="3818000" />
+      <workItem from="1655146643803" duration="740000" />
+      <workItem from="1655147565042" duration="26000" />
+      <workItem from="1655147859533" duration="42000" />
+      <workItem from="1655193404191" duration="3980000" />
+      <workItem from="1655197926963" duration="36000" />
+      <workItem from="1655207716478" duration="7077000" />
+      <workItem from="1655229707380" duration="2333000" />
+      <workItem from="1655284162593" duration="389000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/PostDAO.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/SlotAppuntamentoDAO.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/ProfileDAO.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/ProfileDAO.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/ProfileDAO.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/RegisterController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/PostDAO.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/PostDAO.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/entities/Post.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/FavoriteDAO.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/FavoriteDAO.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/entities/Favorite.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/entities/Favorite.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/FavoriteDAO.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/FavoriteDAO.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageFavoritesController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageFavoritesController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageFavoritesController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/FavoriteDAO.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/AppRequestController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/ScheduledAppController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/ScheduledAppController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/ScheduledAppController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/ScheduledAppointmentDAO.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/ScheduledAppointmentDAO.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/ScheduledAppointmentDAO.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/ScheduledAppointmentDAO.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/ScheduledAppointmentDAO.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageAppointmentController.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageAppointmentController.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/ScheduledAppItemController.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/ScheduledAppItemController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/ScheduledAppItemController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/ScheduledAppItemController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/ScheduledAppItemController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageAppointmentController.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageAppointmentController.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageAppointmentController.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageSlotsController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageSlotsController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageSlotsController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/HomepageController.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/ProfileController.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/ProfileController.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageProfileController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageProfileController.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageProfileController.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageProfileController.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/entities/Profile.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/ProfileDAO.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/viewmobile/PostsPageController.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/viewmobile/PostsPageController.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/LoginController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/LoginController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/LoginController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/LoginController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/LoginController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/entities/User.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/entities/User.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/entities/User.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/viewmobile/RegisterController.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/viewmobile/RegisterController.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/HomepageController.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/HomepageController.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/HomepageController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/HomepageController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/NotificationController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/NotificationController.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/NotificationController.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/NotificationController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageAppointmentController.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/controller/ManageAppointmentController.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/SlotAppuntamentoDAO.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/SlotAppuntamentoDAO.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/view/HomepageController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/presentation/graphics/AppointmentRequestGraphic.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="321" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/dao/AppointmentRequestDAO.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/RoutinesManager.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/java/persistence/RoutinesManager.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
